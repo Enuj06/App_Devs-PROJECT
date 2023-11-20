@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import IndexPage from '../views/IndexPage.vue'
 import LoginView from '../views/LoginView.vue'
+import Communicate from '../views/Communicate.vue'
 
 
 const routes = [
@@ -12,6 +13,10 @@ const routes = [
   {
     path: '/login',
     component: LoginView  
+  },
+  {
+    path: '/communicate',
+    component: Communicate
   },
 ]
 

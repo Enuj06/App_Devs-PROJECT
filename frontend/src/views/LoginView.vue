@@ -10,13 +10,13 @@
           v-model="password"
           label="password"
         ></v-text-field>
-  
+
         <v-btn type="submit" block class="mt-2">Submit</v-btn>
       </v-form>
     </v-sheet>
   </template>
   <script>
-  import axios from 'axios'
+ // import axios from 'axios'
     export default {
         data(){
             return{
@@ -31,4 +31,5 @@
             }
         },
     }
+//    import '@/assets/css/main.css';
   </script>
