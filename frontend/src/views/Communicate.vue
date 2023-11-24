@@ -11,7 +11,7 @@
 
         <v-card-text>
             <v-window v-model="tab">
-                <v-window-item>Tahanan</v-window-item>
+                <v-window-item>Hello Channel</v-window-item>
                 <v-window-item>Pangyayari</v-window-item>
                 <v-window-item>UsapTayo</v-window-item>
             </v-window>
