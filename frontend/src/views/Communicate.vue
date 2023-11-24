@@ -1,51 +1,101 @@
 <template>
-    <v-card>
-        <v-tabs
-            v-model="tab"
-            bg-color="secondary"
-        >
-         <v-tab value="one">Home</v-tab>
-         <v-tab value="two">Events</v-tab>
-         <v-tab value="three">Consultation</v-tab>
-        </v-tabs>
+  <v-card class="d-flex flex-column justify-center align-center">
+    <v-tabs v-model="tab" bg-color="secondary">
+      <v-tab value="one">Home</v-tab>
+      <v-tab value="two">Events</v-tab>
+      <v-tab value="three">Consultation</v-tab>
+    </v-tabs>
+    <v-card-text>
+      <v-container class="align-center">
+        <form @submit.prevent="submitForm" class="mx-auto">
+          <v-sheet width="300">
+            <textarea
+              v-model="chatbotResponse"
+              cols="30"
+              rows="10"
+              placeholder="Chatbot response..."
+              style="
+                background-color: rgb(175, 189, 201);
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #f58be7;
+                box-sizing: border-box;
+                margin-bottom: 16px;
+                resize: vertical;
+                min-height: 150px; /* Adjust the height */
+              "
+              readonly
+            ></textarea>
 
-        <v-card-text>
-            <v-window v-model="tab">
-                <v-window-item>Hello Channel</v-window-item>
-                <v-window-item>Pangyayari</v-window-item>
-                <v-window-item>UsapTayo</v-window-item>
-            </v-window>
-        </v-card-text>
-    </v-card>
-    <form>
-        <v-sheet width="300" class="mx-auto">
-            <h2 style="text-align: center;
-                color: rgb(36, 36, 65);">
-                Hello sa'yo!</h2>
-            <h3 style="text-align: center;">
-                How can I help you? :)
-            </h3><br>
-            <textarea name="" id="thoughts" cols="30" rows="10" placeholder="Input your thoughts here..."
-            style="
-            background-color: rgb(175, 189, 201);
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #f58be7;
-            box-sizing: border-box;
-            margin-top: px;
-            margin-bottom: 16px;
-            resize: vertical;
-            "></textarea>
-             <v-btn type="submit" block class="mt-2">Submit</v-btn>
-        </v-sheet>
-    </form>
-    
+            <!-- User input textarea -->
+            <textarea
+              v-model="userMessage"
+              cols="30"
+              rows="5" 
+              placeholder="Input your thoughts here..."
+              style="
+                background-color: rgb(175, 189, 201);
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #f58be7;
+                box-sizing: border-box;
+                margin-bottom: 16px;
+                resize: vertical;
+              "
+            ></textarea>
+
+            <!-- Submit button -->
+            <v-btn type="submit" block class="mt-2">Submit</v-btn>
+          </v-sheet>
+        </form>
+      </v-container>
+    </v-card-text>
+  </v-card>
 </template>
-
 <script>
-    export default{
-        data: () => ({
-            tab: null,
-        }),
+import axios from 'axios';
+export default {
+  data() {
+    return {
+      tab: null,
+      userMessage: '',
+      chatbotResponse: ''
+    };
+  },
+  methods: {
+    async submitForm() {
+      try {
+        const response = await axios.post('/chatbotinteraction', {
+          message: this.userMessage
+        });
+
+        if (response.data && response.data.response) {
+          this.chatbotResponse = response.data.response;
+        } else {
+          console.error('Invalid response format from server');
+        }
+
+        this.userMessage = '';
+      } catch (error) {
+        console.error('Error submitting form:', error);
+      }
     }
+  }
+};
 </script>
+
+<style>
+textarea {
+  min-width: 100%; 
+}
+
+.flex-column {
+  flex-direction: column;
+}
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+</style>
