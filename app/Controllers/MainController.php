@@ -6,7 +6,7 @@ use App\Controllers\BaseController;
 use CodeIgniter\Restful\ResourceController;
 use CodeIgniter\API\ResponseTrait;
 use App\Models\MainModel;
-
+use GuzzleHttp\Client;
 
 class MainController extends ResourceController
 {
@@ -55,6 +55,41 @@ class MainController extends ResourceController
         }
     }
     }
+
+    public function chatbotInteraction()
+    {
+        $input = $this->request->getPost('message');
+        $apiKey = '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'; 
+    
+        $client = new Client([
+            'base_uri' => 'https://api.openai.com/v1/',
+            'headers' => [
+                'Authorization' => 'Bearer ' . $apiKey,
+                'Content-Type' => 'application/json',
+            ],
+        ]);
+    
+        try {
+            $response = $client->post('engines/davinci/completions', [
+                'json' => [
+                    'prompt' => $input,
+                    'max_tokens' => 50, 
+                ],
+            ]);
+    
+            if ($response->getStatusCode() === 200) {
+                $openaiResponse = $response->getBody()->getContents();
+                $result = json_decode($openaiResponse, true);
+                return $this->response->setJSON(['response' => $result]);
+            } else {
+                return $this->response->setStatusCode($response->getStatusCode())->setJSON(['error' => 'Unexpected status code']);
+            }
+        } catch (\GuzzleHttp\Exception\RequestException $e) {
+            $errorMessage = $e->getMessage();
+            return $this->response->setStatusCode(500)->setJSON(['error' => $errorMessage]);
+        }
+    }
+
     public function index()
     {
         //
