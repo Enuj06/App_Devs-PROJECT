@@ -10,6 +10,11 @@ use GuzzleHttp\Client;
 
 class MainController extends ResourceController
 {
+    public function getData(){
+        $main = new MainModel();
+        $data = $main->findAll();
+        return $this->respond($data, 200);
+    }
     public function register() 
     { 
         $user = new MainModel(); 
