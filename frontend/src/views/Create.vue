@@ -22,7 +22,9 @@
           </v-col>
           <v-col cols="12" class="text-center">
             <span>Already have an account? </span>
-            <v-btn @click="goToLoginPage">Login</v-btn>
+            <router-link to="/">
+            <v-btn color="primary">Login</v-btn>
+          </router-link>
           </v-col>
         </v-row>
       </v-form>
@@ -30,6 +32,7 @@
   </template>
   
   <script>
+  import { RouterLink } from 'vue-router';
   export default {
     data() {
       return {

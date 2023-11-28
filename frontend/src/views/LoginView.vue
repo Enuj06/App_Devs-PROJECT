@@ -8,7 +8,7 @@
     </v-form>
     <v-col cols="12" class="text-center">
     <span>Don't have an account?</span>
-    <v-btn text block @click="redirectToRegistration" class="mt-2">Create Account</v-btn>
+    <v-btn text block @click="goToCreate" class="mt-2">Create Account</v-btn>
   </v-col>
   </v-sheet>
 </template>
@@ -41,7 +41,11 @@ export default {
         console.error('Error logging in:', error);
         this.errorMsg = 'An error occurred while logging in';
       }
-    }
+    },
+    goToCreate() {
+    // Navigate to the create page
+    this.$router.push('/create');
+  },
   }
 };
 </script>
