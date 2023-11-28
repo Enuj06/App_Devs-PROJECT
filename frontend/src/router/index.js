@@ -3,6 +3,9 @@ import IndexPage from '../views/IndexPage.vue'
 import LoginView from '../views/LoginView.vue'
 import Communicate from '../views/Communicate.vue'
 import Create from '../views/Create.vue'
+import Events from '../views/Events.vue'
+import FAQs from '../views/FAQs'
+import AboutView from '../views/AboutView'
 
 
 
@@ -24,6 +27,18 @@ const routes = [
     path: '/create',
     component: Create
   },
+  {
+    path: '/events',
+    component: Events
+  },
+  {
+    path: '/FAQs',
+    component: FAQs
+  },
+  {
+    path: '/about',
+    component: AboutView
+  }
 ]
 
 const router = createRouter({

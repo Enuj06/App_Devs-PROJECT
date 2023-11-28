@@ -1,10 +1,7 @@
 <template>
+  <Hamburger />
   <v-card class="d-flex flex-column justify-center align-center">
-    <v-tabs v-model="tab" bg-color="secondary">
-      <v-tab value="one">Home</v-tab>
-      <v-tab value="two">Events</v-tab>
-      <v-tab value="three">Consultation</v-tab>
-    </v-tabs>
+  <NavBar />
     <v-card-text>
       <v-container class="align-center">
         <form @submit.prevent="submitForm" class="mx-auto">
@@ -54,7 +51,14 @@
 </template>
 <script>
 import axios from 'axios';
+import Hamburger from '@/components/Hamburger.vue';
+import NavBar from '@/components/NavBar.vue'
 export default {
+  name: 'Communicate',
+  components:{
+    Hamburger,
+    NavBar
+  },
   data() {
     return {
       tab: null,
@@ -62,7 +66,6 @@ export default {
       chatbotResponse: ''
     };
   },
-  methods: {
     async submitForm() {
       try {
         const response = await axios.post('/chatbotinteraction', {
@@ -81,8 +84,21 @@ export default {
       }
     }
   }
-};
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <style>
 textarea {

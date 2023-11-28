@@ -1,18 +1,8 @@
 <template>
-    <div>
-      <nav>
-        <router-link to="/">HOME</router-link> |
-        <router-link to="/about">ABOUT</router-link> |
-        <router-link to="/communicate">CHAT</router-link>
-      </nav>
-    </div>
+      <v-tabs bg-color="secondary">
+      <v-tab value="one" href="/communicate">Home</v-tab>
+      <v-tab value="two" href="/events">Events</v-tab>
+      <v-tab value="three" href="/FAQs">FAQs</v-tab>
+      <v-tab value="three" href="/about">About</v-tab>
+    </v-tabs>
 </template>
-
-<script>
-  export default{
-    name: "NavBar",
-    components:{
-      
-    }
-  }
-</script>

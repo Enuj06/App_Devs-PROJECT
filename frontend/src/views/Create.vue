@@ -23,7 +23,7 @@
           <v-col cols="12" class="text-center">
             <span>Already have an account? </span>
             <router-link to="/">
-            <v-btn color="primary">Login</v-btn>
+            <v-btn color="secondary" href="/">Login</v-btn>
           </router-link>
           </v-col>
         </v-row>
@@ -57,12 +57,6 @@
         this.email = '';
         this.password = '';
         this.confirmPassword = '';
-      },
-      goToLoginPage() {
-        // You can implement the logic to navigate to the login page here
-        console.log('Redirecting to the login page');
-        // Example using Vue Router:
-        // this.$router.push('/login');
       },
     },
   };

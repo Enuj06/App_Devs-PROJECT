@@ -1,14 +1,15 @@
 <template>
+  <img src="../assets/minsulogo.png" alt="MinSU Logo">
   <v-sheet width="300" class="mx-auto">
     <v-form @submit.prevent="login">
       <v-text-field v-model="username" label="username"></v-text-field>
       <v-text-field v-model="password" label="password" type="password"></v-text-field>
-      <v-btn type="submit" block class="mt-2">Submit</v-btn><br>
+      <v-btn type="submit" block class="mt-2" color="primary">Submit</v-btn><br>
       <p v-if="errorMsg" class="red--text">{{ errorMsg }}</p>
     </v-form>
     <v-col cols="12" class="text-center">
     <span>Don't have an account?</span>
-    <v-btn text block @click="goToCreate" class="mt-2">Create Account</v-btn>
+    <v-btn text block color="secondary" href="/create" class="mt-2">Create Account</v-btn>
   </v-col>
   </v-sheet>
 </template>
@@ -42,10 +43,6 @@ export default {
         this.errorMsg = 'An error occurred while logging in';
       }
     },
-    goToCreate() {
-    // Navigate to the create page
-    this.$router.push('/create');
-  },
-  }
+}
 };
 </script>

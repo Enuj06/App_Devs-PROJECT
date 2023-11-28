@@ -2,19 +2,19 @@
     <div>
         <Logo />
         <NavBar />
-        <h1>This is an About page</h1>
+        <h1>Frequently Asked Questions</h1>
     </div>
 </template>
 
 <script>
 import Logo from '@/components/Logo.vue'
 import NavBar from '@/components/NavBar.vue';
-    
+
 export default{
-    name: 'AboutView',
+    name: 'FAQs',
         components:{
         Logo,
         NavBar
-      }
     }
+}
 </script>
