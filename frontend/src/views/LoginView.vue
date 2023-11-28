@@ -1,5 +1,7 @@
 <template>
-  <img src="../assets/minsulogo.png" alt="MinSU Logo">
+  <div>
+    <Logo />
+  </div>
   <v-sheet width="300" class="mx-auto">
     <v-form @submit.prevent="login">
       <v-text-field v-model="username" label="username"></v-text-field>
@@ -16,8 +18,13 @@
 
 <script>
 import axios from 'axios';
+import Logo from '@/components/Logo.vue'
 
 export default {
+  name: 'LoginView',
+  components:{
+    Logo
+  },
   data() {
     return {
       username: '',

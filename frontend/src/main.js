@@ -5,6 +5,7 @@ import vuetify from './plugins/vuetify'
 import { loadFonts } from './plugins/webfontloader'
 import '@/assets/css/main.css'
 import axios from 'axios'
+import './assets/css/logo.css';
 
 
 loadFonts()

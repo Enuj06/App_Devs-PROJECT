@@ -1,6 +1,7 @@
 <template>
+  <Logo />
   <Hamburger />
-  <v-card class="d-flex flex-column justify-center align-center">
+  <!-- <v-card class="d-flex flex-column justify-center align-center"> -->
   <NavBar />
     <v-card-text>
       <v-container class="align-center">
@@ -47,17 +48,19 @@
         </form>
       </v-container>
     </v-card-text>
-  </v-card>
+  <!-- </v-card> -->
 </template>
 <script>
 import axios from 'axios';
 import Hamburger from '@/components/Hamburger.vue';
 import NavBar from '@/components/NavBar.vue'
+import Logo from '@/components/Logo.vue'
 export default {
   name: 'Communicate',
   components:{
     Hamburger,
-    NavBar
+    NavBar,
+    Logo
   },
   data() {
     return {
@@ -85,14 +88,6 @@ export default {
     }
   }
 </script>
-
-
-
-
-
-
-
-
 
 
 
