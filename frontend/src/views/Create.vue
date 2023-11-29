@@ -1,4 +1,5 @@
 <template>
+  <Logo />
     <v-container>
       <v-form @submit.prevent="createAccount">
         <v-row>
@@ -33,7 +34,12 @@
   
   <script>
   import { RouterLink } from 'vue-router';
+  import Logo from '@/components/Logo.vue'
   export default {
+    name: 'Create',
+    components:{
+      Logo
+    },
     data() {
       return {
         username: '',
