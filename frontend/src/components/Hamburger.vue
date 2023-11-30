@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <!-- <div>
       <nav>
         <router-link to="/">HOME</router-link> |
         <router-link to="/about">ABOUT</router-link> |
@@ -7,7 +7,7 @@
         <router-link to="/logout">LOG OUT</router-link>
 
       </nav>
-    </div>
+    </div> -->
 </template>
 
 <script>
