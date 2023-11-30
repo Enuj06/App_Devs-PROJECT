@@ -4,12 +4,15 @@
   </div>
   <v-sheet width="300" class="mx-auto">
     <v-form @submit.prevent="login">
-      <v-text-field v-model="username" label="username"></v-text-field>
-      <v-text-field v-model="password" label="password" type="password"></v-text-field>
+      <v-text-field v-model="username" label="Username"></v-text-field>
+      <v-text-field v-model="password" label="Password" type="password"></v-text-field>
       <v-btn type="submit" block class="mt-2" color="primary">Submit</v-btn><br>
       <p v-if="errorMsg" class="red--text">{{ errorMsg }}</p>
     </v-form>
     <v-col cols="12" class="text-center">
+      <v-col cols="12">
+            <v-divider></v-divider>
+          </v-col>
     <span>Don't have an account?</span>
     <v-btn text block color="secondary" href="/create" class="mt-2">Create Account</v-btn>
   </v-col>

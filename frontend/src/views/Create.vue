@@ -16,7 +16,7 @@
             <v-text-field v-model="confirmPassword" label="Confirm Password" type="password" required></v-text-field>
           </v-col>
           <v-col cols="12">
-            <v-btn type="submit" color="primary">Create Account</v-btn>
+            <v-btn type="submit" color="primary" block class="mt-2">Create Account</v-btn>
           </v-col>
           <v-col cols="12">
             <v-divider></v-divider>
