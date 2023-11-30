@@ -1,10 +1,10 @@
 <template>
-      <v-tabs bg-color="secondary">
+      <v-tabs bg-color="secondary" class="sticky-tabs">
       <v-tab value="one" href="/communicate">Home</v-tab>
       <v-tab value="two" href="/events">Events</v-tab>
       <v-tab value="three" href="/FAQs">FAQs</v-tab>
-      <v-tab value="three" href="/about">About</v-tab>
-      <v-tab value="three" href="" class="logout-tab" @click="confirmation">Log Out</v-tab>
+      <v-tab value="four" href="/about">About</v-tab>
+      <v-tab value="five" href="" class="logout-tab" @click="confirmation">Log Out</v-tab>
     </v-tabs>
 </template>
 
@@ -12,7 +12,7 @@
 export default {
   methods: {
     confirmation() {
-      var answer = confirm("Confirm submit?")
+      var answer = confirm("Confirm Log Out?")
       if(answer){
         this.$router.push("/")
       }
@@ -28,5 +28,11 @@ export default {
 <style scoped>
 .logout-tab{
   margin-left: auto;
+}
+
+.sticky-tabs {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Adjust the z-index as needed to ensure it appears above other elements */
 }
 </style>
