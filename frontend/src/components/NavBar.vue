@@ -27,6 +27,6 @@ export default {
 
 <style scoped>
 .logout-tab{
-  margin-left: 68%;
+  margin-left: auto;
 }
 </style>
