@@ -7,6 +7,7 @@ use CodeIgniter\Restful\ResourceController;
 use CodeIgniter\API\ResponseTrait;
 use App\Models\MainModel;
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\RequestException;
 
 class MainController extends ResourceController
 {
@@ -15,8 +16,10 @@ class MainController extends ResourceController
         $data = $main->findAll();
         return $this->respond($data, 200);
     }
+    
     public function register() 
     { 
+
         $user = new MainModel(); 
         $token = $this->verification(50); 
         $data = [ 
@@ -34,6 +37,7 @@ class MainController extends ResourceController
         { 
             return $this->respond(['msg' => 'failed']); 
         } 
+
     } 
 
     public function verification($length)
@@ -61,11 +65,11 @@ class MainController extends ResourceController
     } else {
         return $this->respond(['msg' => 'invalid'], 200);
     }
-    }
+}
     public function chatbotInteraction()
     {
         $input = $this->request->getPost('message');
-        $apiKey = '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'; 
+        $apiKey = ''; 
     
         $client = new Client([
             'base_uri' => 'https://api.openai.com/v1/',
@@ -90,7 +94,7 @@ class MainController extends ResourceController
             } else {
                 return $this->response->setStatusCode($response->getStatusCode())->setJSON(['error' => 'Unexpected status code']);
             }
-        } catch (\GuzzleHttp\Exception\RequestException $e) {
+        } catch (RequestException $e) {
             $errorMessage = $e->getMessage();
             return $this->response->setStatusCode(500)->setJSON(['error' => $errorMessage]);
         }
@@ -98,6 +102,6 @@ class MainController extends ResourceController
 
     public function index()
     {
-        
+
     }
 }

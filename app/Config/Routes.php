@@ -8,4 +8,5 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('/getData','MainController::getData');
 $routes->match(['post', 'get'], '/login', 'MainController::login');
+$routes->post('/register', 'MainController::register');
 $routes->post('/chatbotinteraction', 'MainController::chatbotInteraction');
