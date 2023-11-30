@@ -32,13 +32,15 @@
     </v-container>
   </template>
   
-  <script>
+<script>
   import { RouterLink } from 'vue-router';
-  import Logo from '@/components/Logo.vue'
+  import Logo from '@/components/Logo.vue';
+  import axios from 'axios'; 
+  
   export default {
     name: 'Create',
-    components:{
-      Logo
+    components: {
+      Logo,
     },
     data() {
       return {
@@ -50,15 +52,23 @@
     },
     methods: {
       createAccount() {
-        // Perform account creation logic here
-        // For example, you can make an API call to a server to create the account
-        console.log('Account created with the following details:');
-        console.log('Username:', this.username);
-        console.log('Email:', this.email);
-        console.log('Password:', this.password);
-        console.log('Confirm Password:', this.confirmPassword);
+        const registrationData = {
+          username: this.username,
+          password: this.password,
+        };
   
-        // Reset form fields after submission
+        axios.post('/register', registrationData)
+          .then(response => {
+            if (response.data.msg === 'okay') {
+              console.log('Registration successful!');
+            } else {
+              console.log('Registration failed!');
+            }
+          })
+          .catch(error => {
+            console.error('Error during registration:', error);
+          });
+  
         this.username = '';
         this.email = '';
         this.password = '';
@@ -69,6 +79,5 @@
   </script>
   
   <style scoped>
-  /* Add your custom styles here */
   </style>
   
