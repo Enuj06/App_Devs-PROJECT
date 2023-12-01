@@ -7,8 +7,6 @@ import Events from '../views/Events.vue'
 import FAQs from '../views/FAQs'
 import AboutView from '../views/AboutView'
 
-
-
 const routes = [
   {
     path: '/',
