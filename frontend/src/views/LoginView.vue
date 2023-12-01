@@ -4,8 +4,15 @@
   </div>
   <v-sheet width="300" class="mx-auto">
     <v-form @submit.prevent="login">
-      <v-text-field v-model="username" label="Username"></v-text-field>
-      <v-text-field v-model="password" label="Password" type="password"></v-text-field>
+      <v-text-field 
+      v-model="username" 
+      label="Username"
+      ></v-text-field>
+      <v-text-field 
+      v-model="password" 
+      label="Password"
+      ></v-text-field>
+
       <v-btn type="submit" block class="mt-2" color="primary">Submit</v-btn><br>
       <p v-if="errorMsg" class="red--text">{{ errorMsg }}</p>
     </v-form>
@@ -38,7 +45,7 @@ export default {
   methods: {
     async login() {
       try {
-        const response = await axios.post('/login', {
+        const response = await axios.post('api/login', {
           username: this.username,
           password: this.password
         });
