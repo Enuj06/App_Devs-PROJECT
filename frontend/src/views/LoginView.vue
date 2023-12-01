@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Logo />
+    <Logo /><br><br>
   </div>
   <v-sheet width="300" class="mx-auto">
     <v-form @submit.prevent="login">
@@ -8,9 +8,12 @@
       v-model="username" 
       label="Username"
       ></v-text-field>
-      <v-text-field 
-      v-model="password" 
+      <v-text-field
+      v-model="password"
       label="Password"
+      :type="showPassword ? 'text' : 'password'" 
+      append-icon="mdi-eye" 
+      @click:append="showPassword = !showPassword" 
       ></v-text-field>
 
       <v-btn type="submit" block class="mt-2" color="primary">Submit</v-btn><br>
@@ -39,6 +42,7 @@ export default {
     return {
       username: '',
       password: '',
+      showPassword: false,
       errorMsg: ''
     };
   },
@@ -52,6 +56,7 @@ export default {
 
         if (response.data.msg === 'okay' && response.data.token) {
           console.log('Login successful. Token:', response.data.token);
+          this.$router.push('/communicate');
         } else {
           this.errorMsg = 'Invalid credentials';
         }
