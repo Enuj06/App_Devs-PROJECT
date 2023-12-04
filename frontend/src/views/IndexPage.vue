@@ -14,16 +14,14 @@
     <div>
         <table border="1">
             <tr>
-                <th>LAST NAME</th>
-                <th>FIRST NAME</th>
-                <th>GENDER</th>
-                <th>AGE</th>
+                <th>USERNAME</th>
+                <th>STATUS</th>
+                <th>ROLE</th>
             </tr>
-            <tr v-for="info in info">
-                <td>{{ info.lastname }}</td>
-                <td>{{ info.firstname }}</td>
-                <td>{{ info. gender }}</td>
-                <td>{{ info.age }}</td>
+            <tr v-for="users in users">
+                <td>{{ users.username }}</td>
+                <td>{{ users.status }}</td>
+                <td>{{ users.role }}</td>
             </tr>
         </table>
     </div>
