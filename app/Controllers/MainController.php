@@ -2,12 +2,14 @@
 
 namespace App\Controllers;
 
+
 use App\Controllers\BaseController;
 use CodeIgniter\Restful\ResourceController;
 use CodeIgniter\API\ResponseTrait;
 use App\Models\MainModel;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
+use Orhanerday\OpenAi\OpenAi;
 
 class MainController extends ResourceController
 {
@@ -66,42 +68,46 @@ class MainController extends ResourceController
         return $this->respond(['msg' => 'invalid'], 200);
     }
 }
-    public function chatbotInteraction()
-    {
-        $input = $this->request->getPost('message');
-        $apiKey = ''; 
-    
-        $client = new Client([
-            'base_uri' => 'https://api.openai.com/v1/',
-            'headers' => [
-                'Authorization' => 'Bearer ' . $apiKey,
-                'Content-Type' => 'application/json',
-            ],
+public function chatbotInteraction()
+{
+    $open_ai_key = 'a'; 
+
+    $open_ai = new OpenAI([
+        'key' => $open_ai_key,
+        'headers' => [
+            'Content-Type: application/json',
+        ],
+    ]);
+
+    $prompt = $_POST['userMessage']; 
+
+    try {
+        $complete = $open_ai->completion([
+            'model' => 'text-davinci-003',
+            'prompt' => $prompt, 
+            'temperature' => 0.9,
+            'max_tokens' => 150,
+            'frequency_penalty' => 0,
+            'presence_penalty' => 0.6,
         ]);
-    
-        try {
-            $response = $client->post('engines/davinci/completions', [
-                'json' => [
-                    'prompt' => $input,
-                    'max_tokens' => 50, 
-                ],
-            ]);
-    
-            if ($response->getStatusCode() === 200) {
-                $openaiResponse = $response->getBody()->getContents();
-                $result = json_decode($openaiResponse, true); // Define $result here
-                return $this->response->setJSON(['response' => $result]);
-            } else {
-                return $this->response->setStatusCode($response->getStatusCode())->setJSON(['error' => 'Unexpected status code']);
-            }
-        } catch (RequestException $e) {
-            $errorMessage = $e->getMessage();
-            return $this->response->setStatusCode(500)->setJSON(['error' => $errorMessage]);
+
+        if (isset($complete['choices'][0]['text'])) {
+            $responseText = $complete['choices'][0]['text'];
+            $jsonResponse = json_encode(['text' => $responseText]);
+            header('Content-Type: application/json');
+            echo $jsonResponse;
+        } else {
+            http_response_code(500);
+            echo json_encode(['error' => 'Unexpected response from OpenAI']);
         }
+    } catch (\Exception $e) {
+        http_response_code(500);
+        echo json_encode(['error' => $e->getMessage()]);
     }
+}
 
     public function index()
     {
-
+        return view('chatbot_interaction');
     }
 }
