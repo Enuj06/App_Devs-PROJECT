@@ -6,7 +6,7 @@ import Create from '../views/Create.vue'
 import Events from '../views/Events.vue'
 import FAQs from '../views/FAQs'
 import AboutView from '../views/AboutView'
-
+import Header from '../views/admin/Header.vue'
 const routes = [
   {
     path: '/',
@@ -36,6 +36,10 @@ const routes = [
   {
     path: '/about',
     component: AboutView
+  },
+  {
+    path: '/admin',
+    component: Header
   }
 ]
 

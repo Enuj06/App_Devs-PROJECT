@@ -1,5 +1,6 @@
 <template>
     <div>
+        <header />
         <h1>Welcome to MinSU Guidance Office!</h1>
 
         <form class="form">
@@ -28,7 +29,9 @@
 </template>
 
 <style scoped>
-
+    h1{
+        text-align: center;
+    }
  </style>
 
     <script>
