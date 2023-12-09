@@ -6,7 +6,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use CodeIgniter\Restful\ResourceController;
 use CodeIgniter\API\ResponseTrait;
-use App\Models\MainModel;
+use App\Models\AnnouncementModel;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use Orhanerday\OpenAi\OpenAi;

@@ -12,3 +12,10 @@ $routes->post('/register', 'MainController::register');
 
 $routes->get('/chatbot', 'MainController::index');
 $routes->post('/chatbotinteraction', 'MainController::chatbotInteraction');
+
+$routes->get('/faq', 'AdminController::index'); 
+$routes->post('/create-faq', 'AdminController::createFAQ');
+
+$routes->post('/create-announcement', 'AdminController::createannounce');
+$routes->post('/upload-image', 'AdminController::uploadImage');
+$routes->get('/fetch-announcements', 'AdminController::fetchAnnouncements');
