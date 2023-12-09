@@ -15,7 +15,13 @@ $routes->post('/chatbotinteraction', 'MainController::chatbotInteraction');
 
 $routes->get('/faq', 'AdminController::index'); 
 $routes->post('/create-faq', 'AdminController::createFAQ');
+$routes->get('/edit-faq/(:num)', 'AdminController::editFAQ/$1');
+$routes->post('/update-faq/(:num)', 'AdminController::updateFAQ/$1');
+$routes->get('/delete-faq/(:num)', 'AdminController::deleteFAQ/$1');
 
 $routes->post('/create-announcement', 'AdminController::createannounce');
 $routes->post('/upload-image', 'AdminController::uploadImage');
 $routes->get('/fetch-announcements', 'AdminController::fetchAnnouncements');
+$routes->get('/edit-announcement/(:num)', 'AdminController::editAnnouncement/$1');
+$routes->post('/update-announcement/(:num)', 'AdminController::updateAnnouncement/$1');
+$routes->get('/delete-announcement/(:num)', 'AdminController::deleteAnnouncement/$1');

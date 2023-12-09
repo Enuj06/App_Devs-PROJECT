@@ -20,12 +20,10 @@ class AdminController extends ResourceController
     {
         $faqModel = new FAQModel();
 
-        // Retrieve form data
         $question = $this->request->getPost('question');
         $answer = $this->request->getPost('answer');
         $category = $this->request->getPost('category');
 
-        // Prepare the data to insert into the FAQ table
         $data = [
             'question' => $question,
             'answer' => $answer,
@@ -41,25 +39,70 @@ class AdminController extends ResourceController
         }
     }
 
+    public function editFAQ($id)
+    {
+        $faqModel = new FAQModel();
+        $faq = $faqModel->find($id);
+
+        if ($faq) {
+            return view('edit_faq', ['faq' => $faq]);
+        } else {
+            return redirect()->to('/faq')->with('error', 'FAQ not found');
+        }
+    }
+
+    public function updateFAQ($id)
+    {
+        $faqModel = new FAQModel();
+        $faq = $faqModel->find($id);
+
+        if ($faq) {
+            $data = [
+                'question' => $this->request->getVar('question'),
+                'answer' => $this->request->getVar('answer'),
+                'category' => $this->request->getVar('category'),
+            ];
+
+            $updated = $faqModel->update($id, $data);
+
+            if ($updated) {
+                return redirect()->to('/faq')->with('success', 'FAQ updated successfully');
+            } else {
+                return redirect()->back()->withInput()->with('error', 'Failed to update FAQ');
+            }
+        } else {
+            return redirect()->to('/faq')->with('error', 'FAQ not found');
+        }
+    }
+
+    public function deleteFAQ($id)
+    {
+        $faqModel = new FAQModel();
+        $deleted = $faqModel->delete($id);
+
+        if ($deleted) {
+            return redirect()->to('/faq')->with('success', 'FAQ deleted successfully');
+        } else {
+            return redirect()->to('/faq')->with('error', 'Failed to delete FAQ');
+        }
+    }
+
     public function createannounce()
     {
         $announcement = new AnnouncementModel();
     
-        // Handle the image upload
         $file = $this->request->getFile('userfile');
     
         if ($file->isValid() && !$file->hasMoved()) {
             $newName = $file->getRandomName();
             $file->move('uploads', $newName);
     
-            // Include the image URL in the announcement data
             $imageUrl = base_url('uploads/' . $newName);
     
-            // Get other announcement data
             $data = [
                 'title' => $this->request->getVar('title'),
                 'content' => $this->request->getVar('content'),
-                'image_url' => $imageUrl, // Include the image URL in the data
+                'image_url' => $imageUrl, 
             ];
     
             $saved = $announcement->save($data);
@@ -83,6 +126,68 @@ class AdminController extends ResourceController
             return $this->response->setJSON($announcements); // Return the announcements as a JSON response
         } else {
             return $this->respond(['msg' => 'No announcements found'], 404);
+        }
+    }
+
+    public function editAnnouncement($id)
+    {
+        $announcementModel = new AnnouncementModel();
+        $announcement = $announcementModel->find($id);
+
+        if ($announcement) {
+            return view('edit_announcement', ['announcement' => $announcement]);
+        } else {
+            return redirect()->to('/')->with('error', 'Announcement not found');
+        }
+    }
+
+    public function updateAnnouncement($id)
+    {
+        $announcementModel = new AnnouncementModel();
+        $announcement = $announcementModel->find($id);
+    
+        if ($announcement) {
+            // Handle the image upload if a new image is selected
+            $file = $this->request->getFile('userfile');
+            if ($file->isValid() && !$file->hasMoved()) {
+                $newName = $file->getRandomName();
+                $file->move('uploads', $newName);
+    
+                // Update the image URL along with other fields
+                $imageUrl = base_url('uploads/' . $newName);
+            } else {
+                // Keep the existing image URL if no new image is uploaded
+                $imageUrl = $announcement['image_url'];
+            }
+    
+            // Update data including the image URL
+            $data = [
+                'title' => $this->request->getVar('title'),
+                'content' => $this->request->getVar('content'),
+                'image_url' => $imageUrl,
+            ];
+    
+            $updated = $announcementModel->update($id, $data);
+    
+            if ($updated) {
+                return redirect()->to('/')->with('success', 'Announcement updated successfully');
+            } else {
+                return redirect()->back()->withInput()->with('error', 'Failed to update announcement');
+            }
+        } else {
+            return redirect()->to('/')->with('error', 'Announcement not found');
+        }
+    }    
+
+    public function deleteAnnouncement($id)
+    {
+        $announcementModel = new AnnouncementModel();
+        $deleted = $announcementModel->delete($id);
+
+        if ($deleted) {
+            return redirect()->to('/')->with('success', 'Announcement deleted successfully');
+        } else {
+            return redirect()->to('/')->with('error', 'Failed to delete announcement');
         }
     }
 }
