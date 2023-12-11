@@ -106,8 +106,8 @@ public function chatbotInteraction()
         echo json_encode(['error' => $e->getMessage()]);
     }
 }
-
     public function index()
     {
+        
     }
 }

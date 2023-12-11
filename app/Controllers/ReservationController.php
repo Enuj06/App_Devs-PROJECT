@@ -10,7 +10,7 @@ class ReservationController extends BaseController
     public function index()
     {
         $scheduleModel = new ReserveModel();
-        $data['appointments'] = $scheduleModel->findAll(); // Fetch all appointments from the database
+        $data['appointments'] = $scheduleModel->findAll(); 
 
         return view('schedule', $data);
     }
