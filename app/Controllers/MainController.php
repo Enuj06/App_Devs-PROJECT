@@ -109,6 +109,5 @@ public function chatbotInteraction()
 
     public function index()
     {
-        return view('chatbot_interaction');
     }
 }
