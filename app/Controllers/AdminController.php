@@ -147,7 +147,6 @@ class AdminController extends ResourceController
         $announcement = $announcementModel->find($id);
     
         if ($announcement) {
-            // Handle the image upload if a new image is selected
             $file = $this->request->getFile('userfile');
             if ($file->isValid() && !$file->hasMoved()) {
                 $newName = $file->getRandomName();
