@@ -1,0 +1,379 @@
+ERROR - 2023-12-21 04:38:35 --> File upload attempt: 
+CRITICAL - 2023-12-21 04:38:35 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 121.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->createannounce()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 04:38:36 --> File upload attempt: 
+CRITICAL - 2023-12-21 04:38:36 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 121.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->createannounce()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 04:38:37 --> File upload attempt: 
+CRITICAL - 2023-12-21 04:38:37 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 121.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->createannounce()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 04:38:38 --> File upload attempt: 
+CRITICAL - 2023-12-21 04:38:38 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 121.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->createannounce()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 05:00:40 --> mysqli_sql_exception: Column 'appointment_date' cannot be null in C:\laragon\www\App_Devs-PROJECT-backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `sc...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sc...')
+#2 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sc...')
+#3 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sc...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT-backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\App_Devs-PROJECT-backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\App_Devs-PROJECT-backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\App_Devs-PROJECT-backend\app\Controllers\ReservationController.php(42): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(942): App\Controllers\ReservationController->create()
+#9 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#10 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\App_Devs-PROJECT-backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-21 05:00:40 --> Column 'appointment_date' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `schedules` (`appointment_date`, `start_time`, `end_time`, `status`) VALUES (:appointment_date:, :start_time:, :end_time:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ReservationController.php(42): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 05:00:41 --> mysqli_sql_exception: Column 'appointment_date' cannot be null in C:\laragon\www\App_Devs-PROJECT-backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `sc...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sc...')
+#2 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sc...')
+#3 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sc...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT-backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\App_Devs-PROJECT-backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\App_Devs-PROJECT-backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\App_Devs-PROJECT-backend\app\Controllers\ReservationController.php(42): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(942): App\Controllers\ReservationController->create()
+#9 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#10 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\App_Devs-PROJECT-backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-21 05:00:41 --> Column 'appointment_date' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `schedules` (`appointment_date`, `start_time`, `end_time`, `status`) VALUES (:appointment_date:, :start_time:, :end_time:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ReservationController.php(42): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 05:00:42 --> mysqli_sql_exception: Column 'appointment_date' cannot be null in C:\laragon\www\App_Devs-PROJECT-backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `sc...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sc...')
+#2 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sc...')
+#3 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sc...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT-backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\App_Devs-PROJECT-backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\App_Devs-PROJECT-backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\App_Devs-PROJECT-backend\app\Controllers\ReservationController.php(42): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(942): App\Controllers\ReservationController->create()
+#9 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#10 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\App_Devs-PROJECT-backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-21 05:00:42 --> Column 'appointment_date' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `schedules` (`appointment_date`, `start_time`, `end_time`, `status`) VALUES (:appointment_date:, :start_time:, :end_time:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ReservationController.php(42): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 05:01:13 --> mysqli_sql_exception: Column 'appointment_date' cannot be null in C:\laragon\www\App_Devs-PROJECT-backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `sc...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sc...')
+#2 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sc...')
+#3 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sc...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT-backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\App_Devs-PROJECT-backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\App_Devs-PROJECT-backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\App_Devs-PROJECT-backend\app\Controllers\ReservationController.php(42): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(942): App\Controllers\ReservationController->create()
+#9 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#10 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\App_Devs-PROJECT-backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-21 05:01:13 --> Column 'appointment_date' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `schedules` (`appointment_date`, `start_time`, `end_time`, `status`) VALUES (:appointment_date:, :start_time:, :end_time:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ReservationController.php(42): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 05:01:48 --> mysqli_sql_exception: Column 'appointment_date' cannot be null in C:\laragon\www\App_Devs-PROJECT-backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `sc...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sc...')
+#2 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sc...')
+#3 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sc...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT-backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\App_Devs-PROJECT-backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\App_Devs-PROJECT-backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\App_Devs-PROJECT-backend\app\Controllers\ReservationController.php(42): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(942): App\Controllers\ReservationController->create()
+#9 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#10 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\App_Devs-PROJECT-backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-21 05:01:48 --> Column 'appointment_date' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `schedules` (`appointment_date`, `start_time`, `end_time`, `status`) VALUES (:appointment_date:, :start_time:, :end_time:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ReservationController.php(42): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 05:25:32 --> Call to undefined method CodeIgniter\Router\RouteCollection::wowt()
+in SYSTEMPATH\Router\RouteCollection.php on line 1005.
+ 1 APPPATH\Config\Routes.php(38): CodeIgniter\Router\RouteCollection->match([...], '/schedule/create', 'ReservationController::create')
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 05:28:07 --> Invalid file: "schedule/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('schedule/create.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('schedule/create', [], true)
+ 3 APPPATH\Controllers\ReservationController.php(50): view('schedule/create', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 05:28:48 --> Invalid file: "schedule/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('schedule/create.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('schedule/create', [], true)
+ 3 APPPATH\Controllers\ReservationController.php(50): view('schedule/create', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 05:31:26 --> Invalid file: "schedule/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('schedule/create.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('schedule/create', [], true)
+ 3 APPPATH\Controllers\ReservationController.php(50): view('schedule/create', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 05:32:22 --> Invalid file: "schedule/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('schedule/create.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('schedule/create', [], true)
+ 3 APPPATH\Controllers\ReservationController.php(50): view('schedule/create', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 05:32:23 --> Invalid file: "schedule/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('schedule/create.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('schedule/create', [], true)
+ 3 APPPATH\Controllers\ReservationController.php(50): view('schedule/create', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 05:32:23 --> Invalid file: "schedule/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('schedule/create.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('schedule/create', [], true)
+ 3 APPPATH\Controllers\ReservationController.php(50): view('schedule/create', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 05:32:24 --> Invalid file: "schedule/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('schedule/create.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('schedule/create', [], true)
+ 3 APPPATH\Controllers\ReservationController.php(50): view('schedule/create', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 05:32:24 --> Invalid file: "schedule/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('schedule/create.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('schedule/create', [], true)
+ 3 APPPATH\Controllers\ReservationController.php(50): view('schedule/create', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 05:32:24 --> Invalid file: "schedule/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('schedule/create.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('schedule/create', [], true)
+ 3 APPPATH\Controllers\ReservationController.php(50): view('schedule/create', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 05:34:36 --> File upload attempt: 
+CRITICAL - 2023-12-21 05:34:36 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 121.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->createannounce()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 05:34:37 --> File upload attempt: 
+CRITICAL - 2023-12-21 05:34:37 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 121.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->createannounce()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 05:34:38 --> File upload attempt: 
+CRITICAL - 2023-12-21 05:34:38 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 121.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->createannounce()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 05:34:53 --> File upload attempt: 
+CRITICAL - 2023-12-21 05:34:53 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 121.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->createannounce()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 05:43:51 --> File upload attempt: 
+CRITICAL - 2023-12-21 05:43:51 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 121.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->createannounce()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 05:45:50 --> File upload attempt: 
+CRITICAL - 2023-12-21 05:45:50 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 121.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->createannounce()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 06:01:21 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 168.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->fetchAnnouncements()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 06:01:30 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 168.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->fetchAnnouncements()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 06:01:37 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 168.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->fetchAnnouncements()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 06:01:39 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 168.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->fetchAnnouncements()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 06:01:43 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 168.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->fetchAnnouncements()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 06:01:49 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 168.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->fetchAnnouncements()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 06:01:54 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 168.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->fetchAnnouncements()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 06:02:37 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 168.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->fetchAnnouncements()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 06:02:56 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 168.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->fetchAnnouncements()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 06:03:04 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 168.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->fetchAnnouncements()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 06:03:16 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 168.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->fetchAnnouncements()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 06:04:05 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 168.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->fetchAnnouncements()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 06:04:54 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 168.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->fetchAnnouncements()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 06:17:03 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 120.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->createannounce()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 07:47:58 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 120.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->createannounce()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()

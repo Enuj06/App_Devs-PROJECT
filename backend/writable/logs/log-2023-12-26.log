@@ -1,0 +1,91 @@
+CRITICAL - 2023-12-26 13:47:25 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->updateannounce('17')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\June\\backend\\public\\index.php')
+CRITICAL - 2023-12-26 13:47:41 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->updateannounce('17')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\June\\backend\\public\\index.php')
+CRITICAL - 2023-12-26 13:47:49 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->updateannounce('17')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\June\\backend\\public\\index.php')
+CRITICAL - 2023-12-26 13:49:46 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->updateannounce('17')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\June\\backend\\public\\index.php')
+CRITICAL - 2023-12-26 13:51:32 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->updateannounce('16')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\June\\backend\\public\\index.php')
+CRITICAL - 2023-12-26 13:52:00 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->updateannounce('16')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\June\\backend\\public\\index.php')
+CRITICAL - 2023-12-26 13:56:14 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->updateannounce('16')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\June\\backend\\public\\index.php')
+CRITICAL - 2023-12-26 13:56:32 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->updateannounce('16')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\June\\backend\\public\\index.php')
+CRITICAL - 2023-12-26 13:59:12 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->updateannounce('16')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\June\\backend\\public\\index.php')
+CRITICAL - 2023-12-26 14:02:42 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->updateannounce('16')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\June\\backend\\public\\index.php')
+CRITICAL - 2023-12-26 14:03:00 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->updateannounce('16')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\June\\backend\\public\\index.php')
+CRITICAL - 2023-12-26 14:03:01 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->updateannounce('16')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\June\\backend\\public\\index.php')
+CRITICAL - 2023-12-26 14:09:26 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->updateannounce('16')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\June\\backend\\public\\index.php')
