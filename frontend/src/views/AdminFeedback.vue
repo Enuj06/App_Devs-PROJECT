@@ -3,6 +3,7 @@
       <AdminLogoVue/><br>
         <AdminNav  />
         <h1>Feedback</h1>
+        <h3>Feedback Table</h3>
     </div>
 </template>
 
