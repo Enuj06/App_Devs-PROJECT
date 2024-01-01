@@ -1,6 +1,6 @@
 <template>
   <div class="faq-container">
-    <Logo />
+    <Logo /><br>
     <NavBar />
     <div class="faq-content">
       <h1>Frequently Asked Questions</h1>

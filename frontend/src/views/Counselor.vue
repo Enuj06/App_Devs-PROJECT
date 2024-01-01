@@ -1,8 +1,7 @@
 <template>
-    <Logo />
-    <v-container class="navbar-container" fluid>
-        <NavBar />
-    </v-container>
+        <div class="navbar-container">
+      <Logo /><br>
+        <NavBar  />
     <div class="optional">
             <b><router-link to="/communicate">AI-Generated</router-link> |
             <router-link to="/counselor">Counselor</router-link></b>
@@ -22,7 +21,7 @@
       <div v-if="!hideandshow">
         <AdminAI />
       </div>
-
+      </div>
 </template>
 
 <script>
@@ -59,8 +58,9 @@ export default{
 
 <style scoped>
     .navbar-container {
-  max-width: 800px;
-  margin: 0 auto;
+      max-width: 800px;
+    margin: 0 auto;
+    padding: 20px; /* Adjust padding as needed */
 }
 
 .optional{

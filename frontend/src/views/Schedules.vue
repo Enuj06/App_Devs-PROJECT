@@ -2,9 +2,9 @@
   <div>
     <AdminLogo /><br>
     <AdminNav />
-    <div class="container">
       <h1 class="page-title">Schedules Table</h1>
-
+      <h3>Schedule Table</h3>
+      <div class="container">
       <!-- Form for creating a new schedule -->
       <!-- Form for creating new FAQ -->
       <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
@@ -232,7 +232,7 @@ export default {
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+
 }
 
 .page-title {
@@ -291,4 +291,9 @@ export default {
   background-color: #4caf50;
   color: white;
 }
+
+h3{
+  text-align: center;
+}
+
 </style>

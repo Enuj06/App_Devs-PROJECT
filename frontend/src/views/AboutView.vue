@@ -1,9 +1,7 @@
 <template>
-    <div>
+    <div class="navbar-container">
       <Logo /><br>
-      <div class="navbar-container">
-        <NavBar class="small-navbar" />
-      </div>
+        <NavBar  />
   
       <section class="about-section">
         <h1>About Us</h1><br>

@@ -5,6 +5,7 @@
       <v-tab href="/FAQs">FAQs</v-tab>
       <v-tab href="/about">About</v-tab>
       <v-tab href="/appointments">Appointments</v-tab>
+      <v-tab href="/cfeedback">Feedback</v-tab>
       <v-tab href="" class="logout-tab" @click="confirmation">Log Out</v-tab>
     </v-tabs>
 </template>

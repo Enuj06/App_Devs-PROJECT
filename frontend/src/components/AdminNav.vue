@@ -4,6 +4,7 @@
       <v-tab href="/announcements" class="custom-tab">Announcements</v-tab>
       <v-tab href="/faqsadmin" class="custom-tab">FAQs</v-tab>
       <v-tab href="/schedules" class="custom-tab">Schedules</v-tab>
+      <v-tab href="/adminfeedback" class="custom-tab">Feeback</v-tab>
       <v-tab href="" class="logout-tab" @click="confirmation">Log Out</v-tab>
     </v-tabs>
   </template>

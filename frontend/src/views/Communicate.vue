@@ -1,9 +1,7 @@
 <template>
-  <div>
-    <Logo /><br>
-    <v-container class="navbar-container" fluid>
+    <div class="ccontainer">
+      <Logo /><br>
       <NavBar />
-      </v-container>
           <div class="optional">
             <b><router-link to="/communicate">AI-Generated</router-link> |
             <router-link to="/counselor">Counselor</router-link></b>
@@ -89,9 +87,10 @@ import AI from '@/components/AI.vue';
   margin: 0 auto;
 }
 
-.communicate-container {
+.ccontainer {
   max-width: 800px;
-  margin: 0 auto;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .faq-content {

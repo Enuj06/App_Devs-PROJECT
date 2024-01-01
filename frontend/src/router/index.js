@@ -15,6 +15,8 @@ import Announcements from '../views/Announcements.vue'
 import FaqsAdmin from '../views/FaqsAdmin.vue'
 import Schedules from '../views/Schedules.vue'
 import Counselor from '../views/Counselor.vue'
+import Feedback from '../views/Feedback.vue'
+import AdminFeedback from '../views/AdminFeedback.vue'
 
 const routes = [
   {
@@ -84,6 +86,14 @@ const routes = [
   {
     path: '/counselor',
     component: Counselor
+  },
+  {
+    path:'/cfeedback',
+    component: Feedback,
+  },
+  {
+    path: '/adminfeedback',
+    component: AdminFeedback,
   },
 
 ]
