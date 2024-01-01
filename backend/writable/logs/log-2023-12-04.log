@@ -1,0 +1,120 @@
+CRITICAL - 2023-12-04 14:24:46 --> require(C:\laragon\www\Final\App_Devs-PROJECT\app\Controllers/vendor/autoload.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\MainController.php on line 5.
+ 1 APPPATH\Controllers\MainController.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\laragon\\www\\Final\\App_Devs-PROJECT\\app\\Controllers/vendor/autoload.php): Failed to open stream: No such file or directory', 'C:\\laragon\\www\\Final\\App_Devs-PROJECT\\app\\Controllers\\MainController.php', 5)
+ 2 APPPATH\Controllers\MainController.php(5): require()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('C:\\laragon\\www\\Final\\App_Devs-PROJECT\\app\\Controllers\\MainController.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Final\\App_Devs-PROJECT\\app\\Controllers\\MainController.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\MainController')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\MainController')
+ 7 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\MainController', true)
+ 8 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Final\\App_Devs-PROJECT\\public\\index.php')
+CRITICAL - 2023-12-04 14:25:25 --> Undefined array key "userMessage"
+in APPPATH\Controllers\MainController.php on line 76.
+ 1 APPPATH\Controllers\MainController.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "userMessage"', 'C:\\laragon\\www\\Final\\App_Devs-PROJECT\\app\\Controllers\\MainController.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MainController->chatbotInteraction()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Final\\App_Devs-PROJECT\\public\\index.php')
+CRITICAL - 2023-12-04 14:33:09 --> Array to string conversion
+in VENDORPATH\orhanerday\open-ai\src\OpenAi.php on line 29.
+ 1 VENDORPATH\orhanerday\open-ai\src\OpenAi.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\Final\\App_Devs-PROJECT\\vendor\\orhanerday\\open-ai\\src\\OpenAi.php', 29)
+ 2 APPPATH\Controllers\MainController.php(77): Orhanerday\OpenAi\OpenAi->__construct([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MainController->chatbotInteraction()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Final\\App_Devs-PROJECT\\public\\index.php')
+CRITICAL - 2023-12-04 14:36:24 --> Array to string conversion
+in VENDORPATH\orhanerday\open-ai\src\OpenAi.php on line 29.
+ 1 VENDORPATH\orhanerday\open-ai\src\OpenAi.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\Final\\App_Devs-PROJECT\\vendor\\orhanerday\\open-ai\\src\\OpenAi.php', 29)
+ 2 APPPATH\Controllers\MainController.php(77): Orhanerday\OpenAi\OpenAi->__construct([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MainController->chatbotInteraction()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Final\\App_Devs-PROJECT\\public\\index.php')
+CRITICAL - 2023-12-04 14:36:30 --> Array to string conversion
+in VENDORPATH\orhanerday\open-ai\src\OpenAi.php on line 29.
+ 1 VENDORPATH\orhanerday\open-ai\src\OpenAi.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\Final\\App_Devs-PROJECT\\vendor\\orhanerday\\open-ai\\src\\OpenAi.php', 29)
+ 2 APPPATH\Controllers\MainController.php(77): Orhanerday\OpenAi\OpenAi->__construct([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MainController->chatbotInteraction()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Final\\App_Devs-PROJECT\\public\\index.php')
+CRITICAL - 2023-12-04 14:45:22 --> Array to string conversion
+in VENDORPATH\orhanerday\open-ai\src\OpenAi.php on line 29.
+ 1 VENDORPATH\orhanerday\open-ai\src\OpenAi.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\Final\\App_Devs-PROJECT\\vendor\\orhanerday\\open-ai\\src\\OpenAi.php', 29)
+ 2 APPPATH\Controllers\MainController.php(76): Orhanerday\OpenAi\OpenAi->__construct([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MainController->chatbotInteraction()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Final\\App_Devs-PROJECT\\public\\index.php')
+CRITICAL - 2023-12-04 14:45:38 --> Array to string conversion
+in VENDORPATH\orhanerday\open-ai\src\OpenAi.php on line 29.
+ 1 VENDORPATH\orhanerday\open-ai\src\OpenAi.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\Final\\App_Devs-PROJECT\\vendor\\orhanerday\\open-ai\\src\\OpenAi.php', 29)
+ 2 APPPATH\Controllers\MainController.php(76): Orhanerday\OpenAi\OpenAi->__construct([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MainController->chatbotInteraction()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Final\\App_Devs-PROJECT\\public\\index.php')
+CRITICAL - 2023-12-04 14:45:48 --> Array to string conversion
+in VENDORPATH\orhanerday\open-ai\src\OpenAi.php on line 29.
+ 1 VENDORPATH\orhanerday\open-ai\src\OpenAi.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\Final\\App_Devs-PROJECT\\vendor\\orhanerday\\open-ai\\src\\OpenAi.php', 29)
+ 2 APPPATH\Controllers\MainController.php(76): Orhanerday\OpenAi\OpenAi->__construct([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MainController->chatbotInteraction()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Final\\App_Devs-PROJECT\\public\\index.php')
+CRITICAL - 2023-12-04 14:57:54 --> Array to string conversion
+in VENDORPATH\orhanerday\open-ai\src\OpenAi.php on line 29.
+ 1 VENDORPATH\orhanerday\open-ai\src\OpenAi.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\Final\\App_Devs-PROJECT\\vendor\\orhanerday\\open-ai\\src\\OpenAi.php', 29)
+ 2 APPPATH\Controllers\MainController.php(76): Orhanerday\OpenAi\OpenAi->__construct([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MainController->chatbotInteraction()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Final\\App_Devs-PROJECT\\public\\index.php')
+CRITICAL - 2023-12-04 15:01:35 --> Array to string conversion
+in VENDORPATH\orhanerday\open-ai\src\OpenAi.php on line 29.
+ 1 VENDORPATH\orhanerday\open-ai\src\OpenAi.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\Final\\App_Devs-PROJECT\\vendor\\orhanerday\\open-ai\\src\\OpenAi.php', 29)
+ 2 APPPATH\Controllers\MainController.php(76): Orhanerday\OpenAi\OpenAi->__construct([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MainController->chatbotInteraction()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Final\\App_Devs-PROJECT\\public\\index.php')
+CRITICAL - 2023-12-04 15:03:32 --> Array to string conversion
+in VENDORPATH\orhanerday\open-ai\src\OpenAi.php on line 29.
+ 1 VENDORPATH\orhanerday\open-ai\src\OpenAi.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\Final\\App_Devs-PROJECT\\vendor\\orhanerday\\open-ai\\src\\OpenAi.php', 29)
+ 2 APPPATH\Controllers\MainController.php(76): Orhanerday\OpenAi\OpenAi->__construct([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MainController->chatbotInteraction()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Final\\App_Devs-PROJECT\\public\\index.php')
+CRITICAL - 2023-12-04 15:04:28 --> Array to string conversion
+in VENDORPATH\orhanerday\open-ai\src\OpenAi.php on line 29.
+ 1 VENDORPATH\orhanerday\open-ai\src\OpenAi.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\Final\\App_Devs-PROJECT\\vendor\\orhanerday\\open-ai\\src\\OpenAi.php', 29)
+ 2 APPPATH\Controllers\MainController.php(76): Orhanerday\OpenAi\OpenAi->__construct([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MainController->chatbotInteraction()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Final\\App_Devs-PROJECT\\public\\index.php')
+CRITICAL - 2023-12-04 15:04:57 --> Array to string conversion
+in VENDORPATH\orhanerday\open-ai\src\OpenAi.php on line 29.
+ 1 VENDORPATH\orhanerday\open-ai\src\OpenAi.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\Final\\App_Devs-PROJECT\\vendor\\orhanerday\\open-ai\\src\\OpenAi.php', 29)
+ 2 APPPATH\Controllers\MainController.php(76): Orhanerday\OpenAi\OpenAi->__construct([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MainController->chatbotInteraction()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Final\\App_Devs-PROJECT\\public\\index.php')

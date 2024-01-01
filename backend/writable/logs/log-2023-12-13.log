@@ -1,0 +1,562 @@
+CRITICAL - 2023-12-13 15:47:02 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 15:51:46 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 15:53:50 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:10:02 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:10:04 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:10:04 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:11:46 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:11:49 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:11:58 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:15:06 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:19:43 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:20:08 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:24:19 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:24:29 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:24:37 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:26:33 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:30:03 --> Invalid argument supplied for foreach()
+in APPPATH\Views\schedule.php on line 32.
+ 1 APPPATH\Views\schedule.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Views\\schedule.php', 32, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Views\\schedule.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('schedule', [], true)
+ 5 APPPATH\Controllers\ReservationController.php(62): view('schedule', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\App_Devs-PROJECT-backend\\public\\index.php')
+CRITICAL - 2023-12-13 16:33:54 --> Invalid argument supplied for foreach()
+in APPPATH\Views\schedule.php on line 32.
+ 1 APPPATH\Views\schedule.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Views\\schedule.php', 32, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Views\\schedule.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('schedule', [], true)
+ 5 APPPATH\Controllers\ReservationController.php(62): view('schedule', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\App_Devs-PROJECT-backend\\public\\index.php')
+CRITICAL - 2023-12-13 16:34:13 --> Invalid argument supplied for foreach()
+in APPPATH\Views\schedule.php on line 32.
+ 1 APPPATH\Views\schedule.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Views\\schedule.php', 32, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Views\\schedule.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('schedule', [], true)
+ 5 APPPATH\Controllers\ReservationController.php(62): view('schedule', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\App_Devs-PROJECT-backend\\public\\index.php')
+CRITICAL - 2023-12-13 16:37:38 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:39:00 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:39:36 --> Invalid argument supplied for foreach()
+in APPPATH\Views\schedule.php on line 32.
+ 1 APPPATH\Views\schedule.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Views\\schedule.php', 32, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Views\\schedule.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('schedule', [], true)
+ 5 APPPATH\Controllers\ReservationController.php(62): view('schedule', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\App_Devs-PROJECT-backend\\public\\index.php')
+CRITICAL - 2023-12-13 16:40:27 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:43:03 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:44:32 --> syntax error, unexpected token "public", expecting ";" or "{"
+in APPPATH\Controllers\ReservationController.php on line 138.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ReservationController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ReservationController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\ReservationController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:44:43 --> syntax error, unexpected token "public", expecting ";" or "{"
+in APPPATH\Controllers\ReservationController.php on line 138.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ReservationController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ReservationController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\ReservationController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:45:09 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 145.
+ 1 APPPATH\Controllers\ReservationController.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 145)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:45:25 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 145.
+ 1 APPPATH\Controllers\ReservationController.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 145)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:46:53 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 145.
+ 1 APPPATH\Controllers\ReservationController.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 145)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:50:21 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:50:33 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:52:36 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:52:38 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:52:39 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:54:01 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:55:20 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:55:42 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:56:53 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Controllers\ReservationController.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-13 16:58:00 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 17:00:09 --> Undefined array key "status"
+in APPPATH\Controllers\ReservationController.php on line 146.
+ 1 APPPATH\Controllers\ReservationController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Controllers\\ReservationController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->bookAppointment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 20:02:35 --> mysqli_sql_exception: Column 'question' cannot be null in C:\laragon\www\App_Devs-PROJECT-backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT-backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\App_Devs-PROJECT-backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\App_Devs-PROJECT-backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\App_Devs-PROJECT-backend\app\Controllers\AdminController.php(33): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(942): App\Controllers\AdminController->createFAQ()
+#9 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\App_Devs-PROJECT-backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-13 20:02:35 --> Column 'question' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `faq` (`question`, `answer`, `category`) VALUES (:question:, :answer:, :category:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AdminController.php(33): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->createFAQ()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 20:03:44 --> mysqli_sql_exception: Column 'question' cannot be null in C:\laragon\www\App_Devs-PROJECT-backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT-backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\App_Devs-PROJECT-backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\App_Devs-PROJECT-backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\App_Devs-PROJECT-backend\app\Controllers\AdminController.php(31): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(942): App\Controllers\AdminController->createFAQ()
+#9 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\App_Devs-PROJECT-backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-13 20:03:44 --> Column 'question' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `faq` (`question`, `answer`) VALUES (:question:, :answer:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AdminController.php(31): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->createFAQ()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 20:50:36 --> mysqli_sql_exception: Column 'appointment_date' cannot be null in C:\laragon\www\App_Devs-PROJECT-backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `sc...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sc...')
+#2 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sc...')
+#3 C:\laragon\www\App_Devs-PROJECT-backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sc...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT-backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\App_Devs-PROJECT-backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\App_Devs-PROJECT-backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\App_Devs-PROJECT-backend\app\Controllers\ReservationController.php(42): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(942): App\Controllers\ReservationController->create()
+#9 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#10 C:\laragon\www\App_Devs-PROJECT-backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\App_Devs-PROJECT-backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-13 20:50:36 --> Column 'appointment_date' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `schedules` (`appointment_date`, `start_time`, `end_time`, `status`) VALUES (:appointment_date:, :start_time:, :end_time:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ReservationController.php(42): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReservationController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 21:01:43 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 112.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->createannounce()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 21:13:33 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 117.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->createannounce()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 21:16:37 --> File upload attempt: 
+CRITICAL - 2023-12-13 21:16:37 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 121.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->createannounce()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 21:56:24 --> File upload attempt: 
+CRITICAL - 2023-12-13 21:56:24 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 121.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->createannounce()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 21:58:06 --> File upload attempt: CodeIgniter\HTTP\Files\UploadedFile Object
+(
+    [path:protected] => C:\wamp64\tmp\php628.tmp
+    [clientPath:protected] => 
+    [originalName:protected] => download.jpg
+    [name:protected] => download.jpg
+    [originalMimeType:protected] => image/jpeg
+    [error:protected] => 0
+    [hasMoved:protected] => 
+    [size:protected] => 11478
+    [pathName:SplFileInfo:private] => C:\wamp64\tmp\php628.tmp
+    [fileName:SplFileInfo:private] => php628.tmp
+)
+
+CRITICAL - 2023-12-13 22:37:10 --> CodeIgniter\Router\RouteCollection::group(): Argument #1 ($name) must be of type string, array given, called in C:\laragon\www\App_Devs-PROJECT-backend\app\Config\Routes.php on line 15
+in SYSTEMPATH\Router\RouteCollection.php on line 760.
+ 1 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->group([...], Object(Closure))
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 22:37:45 --> CodeIgniter\Router\RouteCollection::group(): Argument #1 ($name) must be of type string, array given, called in C:\laragon\www\App_Devs-PROJECT-backend\app\Config\Routes.php on line 15
+in SYSTEMPATH\Router\RouteCollection.php on line 760.
+ 1 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->group([...], Object(Closure))
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 22:37:45 --> CodeIgniter\Router\RouteCollection::group(): Argument #1 ($name) must be of type string, array given, called in C:\laragon\www\App_Devs-PROJECT-backend\app\Config\Routes.php on line 15
+in SYSTEMPATH\Router\RouteCollection.php on line 760.
+ 1 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->group([...], Object(Closure))
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 22:37:49 --> CodeIgniter\Router\RouteCollection::group(): Argument #1 ($name) must be of type string, array given, called in C:\laragon\www\App_Devs-PROJECT-backend\app\Config\Routes.php on line 15
+in SYSTEMPATH\Router\RouteCollection.php on line 760.
+ 1 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->group([...], Object(Closure))
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 22:37:49 --> CodeIgniter\Router\RouteCollection::group(): Argument #1 ($name) must be of type string, array given, called in C:\laragon\www\App_Devs-PROJECT-backend\app\Config\Routes.php on line 15
+in SYSTEMPATH\Router\RouteCollection.php on line 760.
+ 1 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->group([...], Object(Closure))
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 22:37:50 --> CodeIgniter\Router\RouteCollection::group(): Argument #1 ($name) must be of type string, array given, called in C:\laragon\www\App_Devs-PROJECT-backend\app\Config\Routes.php on line 15
+in SYSTEMPATH\Router\RouteCollection.php on line 760.
+ 1 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->group([...], Object(Closure))
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 22:37:51 --> CodeIgniter\Router\RouteCollection::group(): Argument #1 ($name) must be of type string, array given, called in C:\laragon\www\App_Devs-PROJECT-backend\app\Config\Routes.php on line 15
+in SYSTEMPATH\Router\RouteCollection.php on line 760.
+ 1 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->group([...], Object(Closure))
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 22:37:52 --> CodeIgniter\Router\RouteCollection::group(): Argument #1 ($name) must be of type string, array given, called in C:\laragon\www\App_Devs-PROJECT-backend\app\Config\Routes.php on line 15
+in SYSTEMPATH\Router\RouteCollection.php on line 760.
+ 1 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->group([...], Object(Closure))
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 22:37:54 --> CodeIgniter\Router\RouteCollection::group(): Argument #1 ($name) must be of type string, array given, called in C:\laragon\www\App_Devs-PROJECT-backend\app\Config\Routes.php on line 15
+in SYSTEMPATH\Router\RouteCollection.php on line 760.
+ 1 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->group([...], Object(Closure))
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 22:37:55 --> CodeIgniter\Router\RouteCollection::group(): Argument #1 ($name) must be of type string, array given, called in C:\laragon\www\App_Devs-PROJECT-backend\app\Config\Routes.php on line 15
+in SYSTEMPATH\Router\RouteCollection.php on line 760.
+ 1 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->group([...], Object(Closure))
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 22:37:57 --> CodeIgniter\Router\RouteCollection::group(): Argument #1 ($name) must be of type string, array given, called in C:\laragon\www\App_Devs-PROJECT-backend\app\Config\Routes.php on line 15
+in SYSTEMPATH\Router\RouteCollection.php on line 760.
+ 1 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->group([...], Object(Closure))
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 22:37:58 --> CodeIgniter\Router\RouteCollection::group(): Argument #1 ($name) must be of type string, array given, called in C:\laragon\www\App_Devs-PROJECT-backend\app\Config\Routes.php on line 15
+in SYSTEMPATH\Router\RouteCollection.php on line 760.
+ 1 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->group([...], Object(Closure))
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 22:38:14 --> CodeIgniter\Router\RouteCollection::group(): Argument #1 ($name) must be of type string, array given, called in C:\laragon\www\App_Devs-PROJECT-backend\app\Config\Routes.php on line 15
+in SYSTEMPATH\Router\RouteCollection.php on line 760.
+ 1 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->group([...], Object(Closure))
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 22:38:16 --> CodeIgniter\Router\RouteCollection::group(): Argument #1 ($name) must be of type string, array given, called in C:\laragon\www\App_Devs-PROJECT-backend\app\Config\Routes.php on line 15
+in SYSTEMPATH\Router\RouteCollection.php on line 760.
+ 1 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->group([...], Object(Closure))
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 22:38:28 --> CodeIgniter\Router\RouteCollection::group(): Argument #1 ($name) must be of type string, array given, called in C:\laragon\www\App_Devs-PROJECT-backend\app\Config\Routes.php on line 15
+in SYSTEMPATH\Router\RouteCollection.php on line 760.
+ 1 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->group([...], Object(Closure))
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 22:38:30 --> CodeIgniter\Router\RouteCollection::group(): Argument #1 ($name) must be of type string, array given, called in C:\laragon\www\App_Devs-PROJECT-backend\app\Config\Routes.php on line 15
+in SYSTEMPATH\Router\RouteCollection.php on line 760.
+ 1 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->group([...], Object(Closure))
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 22:38:31 --> CodeIgniter\Router\RouteCollection::group(): Argument #1 ($name) must be of type string, array given, called in C:\laragon\www\App_Devs-PROJECT-backend\app\Config\Routes.php on line 15
+in SYSTEMPATH\Router\RouteCollection.php on line 760.
+ 1 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->group([...], Object(Closure))
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 22:38:34 --> CodeIgniter\Router\RouteCollection::group(): Argument #1 ($name) must be of type string, array given, called in C:\laragon\www\App_Devs-PROJECT-backend\app\Config\Routes.php on line 15
+in SYSTEMPATH\Router\RouteCollection.php on line 760.
+ 1 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->group([...], Object(Closure))
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\laragon\\www\\App_Devs-PROJECT-backend\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
