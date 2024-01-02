@@ -9,6 +9,7 @@ use CodeIgniter\API\ResponseTrait;
 use App\Models\MainModel;
 use App\Models\FaqModel;
 use App\Models\ReserveModel;
+use App\Models\FeedbackModel;
 
 class AdminController extends ResourceController
 {
@@ -286,5 +287,30 @@ class AdminController extends ResourceController
         } else {
             return redirect()->to('/')->with('error', 'Failed to delete announcement');
         }
+    }
+
+    public function cfeedback(){
+        $request = $this->request;
+
+        $data = [
+            'first_name' => $request->getPost('first_name'),
+            'last_name' => $request->getPost('last_name'),
+            'feed_content' => $request->getPost('feed_content'),
+        ];
+
+        $feedModel = new FeedbackModel(); // Assuming you have a RoomModel
+
+        try {
+            $feedModel->insert($data);
+            return $this->respond(["message" => "Room data saved successfully"], 200);
+        } catch (\Exception $e) {
+            return $this->respond(["message" => "Failed to save room data: " . $e->getMessage()], 500);
+        }
+    }
+
+    public function getfeed(){
+        $main = new FeedbackModel();
+        $data = $main->findAll();
+        return $this->response->setStatusCode(200)->setJSON($data);
     }
 }

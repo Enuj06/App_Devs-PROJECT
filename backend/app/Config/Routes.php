@@ -45,3 +45,5 @@ $routes->delete( '/deleteSched/(:num)', 'ReservationController::deleteSched/$1')
 $routes->post('/schedule/bookAppointment', 'ReservationController::bookAppointment');
 $routes->get('/schedule/getAvailableAppointments', 'MainController::getAvailableAppointments');
 
+$routes->post('/cfeedback', 'AdminController::cfeedback');    //create
+$routes->get('/getfeed', 'AdminController::getfeed');    //display
