@@ -38,6 +38,7 @@
   <style scoped>
   .custom-tab {
     min-width: 120px; /* Adjust the width as needed */
+    color: white;
   }
   
   .logout-tab {
