@@ -1,13 +1,23 @@
 <template>
-    <v-tabs bg-color="secondary" class="sticky-tabs">
-      <v-tab href="/users" class="custom-tab">Users</v-tab>
-      <v-tab href="/announcements" class="custom-tab">Announcements</v-tab>
-      <v-tab href="/faqsadmin" class="custom-tab">FAQs</v-tab>
-      <v-tab href="/schedules" class="custom-tab">Schedules</v-tab>
-      <v-tab href="/adminfeedback" class="custom-tab">Feeback</v-tab>
-      <v-tab href="" class="logout-tab" @click="confirmation">Log Out</v-tab>
-    </v-tabs>
-  </template>
+  <v-tabs bg-color="secondary" class="sticky-tabs">
+    <router-link to="/users" class="custom-tab">
+      <v-tab>Users</v-tab>
+    </router-link>
+    <router-link to="/announcements" class="custom-tab">
+      <v-tab>Announcements</v-tab>
+    </router-link>
+    <router-link to="/faqsadmin" class="custom-tab">
+      <v-tab>FAQs</v-tab>
+    </router-link>
+    <router-link to="/schedules" class="custom-tab">
+      <v-tab>Schedules</v-tab>
+    </router-link>
+    <router-link to="/adminfeedback" class="custom-tab">
+      <v-tab>Feedback</v-tab>
+    </router-link>
+    <v-tab class="logout-tab" @click="confirmation">Log Out</v-tab>
+  </v-tabs>
+</template>
   
   <script>
   export default {
@@ -15,12 +25,12 @@
     confirmation() {
       var answer = confirm("Confirm Log Out?")
       if(answer){
-        this.$router.push("/")
+        this.$router.push("/");
       }
       else{
         return false;
     }
-    }
+    },
   },
   };
   </script>

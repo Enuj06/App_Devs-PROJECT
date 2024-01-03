@@ -1,13 +1,25 @@
 <template>
-      <v-tabs bg-color="secondary" class="sticky-tabs">
-      <v-tab href="/communicate">Home</v-tab>
-      <v-tab href="/events">Events</v-tab>
-      <v-tab href="/FAQs">FAQs</v-tab>
-      <v-tab href="/about">About</v-tab>
-      <v-tab href="/appointments">Appointments</v-tab>
-      <v-tab href="/cfeedback">Feedback</v-tab>
-      <v-tab href="" class="logout-tab" @click="confirmation">Log Out</v-tab>
-    </v-tabs>
+  <v-tabs bg-color="secondary" class="sticky-tabs">
+    <router-link to="/communicate">
+      <v-tab>Home</v-tab>
+    </router-link>
+    <router-link to="/events">
+      <v-tab>Events</v-tab>
+    </router-link>
+    <router-link to="/FAQs">
+      <v-tab>FAQs</v-tab>
+    </router-link>
+    <router-link to="/about">
+      <v-tab>About</v-tab>
+    </router-link>
+    <router-link to="/appointments">
+      <v-tab>Appointments</v-tab>
+    </router-link>
+    <router-link to="/cfeedback">
+      <v-tab>Feedback</v-tab>
+    </router-link>
+    <v-tab class="logout-tab" @click="confirmation">Log Out</v-tab>
+  </v-tabs>
 </template>
 
 <script>

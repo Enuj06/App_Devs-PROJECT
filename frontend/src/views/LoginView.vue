@@ -5,15 +5,15 @@
   <v-sheet width="300" class="mx-auto">
     <v-form @submit.prevent="login">
       <v-text-field 
-      v-model="username" 
-      label="Username"
+        v-model="username" 
+        label="Username"
       ></v-text-field>
       <v-text-field
-      v-model="password"
-      label="Password"
-      :type="showPassword ? 'text' : 'password'" 
-      append-icon="mdi-eye" 
-      @click:append="showPassword = !showPassword" 
+        v-model="password"
+        label="Password"
+        :type="showPassword ? 'text' : 'password'" 
+        append-icon="mdi-eye" 
+        @click:append="showPassword = !showPassword" 
       ></v-text-field>
 
       <v-btn type="submit" block class="mt-2" color="primary">Submit</v-btn><br>
@@ -21,11 +21,14 @@
     </v-form>
     <v-col cols="12" class="text-center">
       <v-col cols="12">
-            <v-divider></v-divider>
-          </v-col>
-    <span>Don't have an account?</span>
-    <v-btn text block color="secondary" router-link="/create" class="mt-2">Create Account</v-btn>
-  </v-col>
+        <v-divider></v-divider>
+      </v-col>
+      <span>Don't have an account?</span>
+      <!-- Use router-link for navigation -->
+      <router-link to="/create" class="text-decoration-none">
+        <v-btn text block color="secondary" class="mt-2">Create Account</v-btn>
+      </router-link>
+    </v-col>
   </v-sheet>
 </template>
 
