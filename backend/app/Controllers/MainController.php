@@ -5,7 +5,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\ReserveModel;
-use CodeIgniter\Restful\ResourceController;
+use CodeIgniter\RESTful\ResourceController;
 use CodeIgniter\API\ResponseTrait;
 use App\Models\MainModel;
 use App\Models\AnnouncementModel;
