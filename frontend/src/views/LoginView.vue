@@ -24,7 +24,7 @@
             <v-divider></v-divider>
           </v-col>
     <span>Don't have an account?</span>
-    <v-btn text block color="secondary" href="/create" class="mt-2">Create Account</v-btn>
+    <v-btn text block color="secondary" router-link="/create" class="mt-2">Create Account</v-btn>
   </v-col>
   </v-sheet>
 </template>
