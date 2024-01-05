@@ -27,8 +27,8 @@
 
     <h3>Table</h3>
 
-    <!-- Display FAQs in a wider table -->
-    <table>
+    <!-- Display Feedback in a wider table -->
+    <table class="responsive-table">
       <thead>
         <tr>
           <th>First Name</th>
@@ -162,6 +162,37 @@ export default{
 
 
 <style scoped>
+
+/* --------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------- */
+
+.responsive-table{
+  width: 100%;
+  border-collapse: collapse;
+  /* Add more styles */
+}
+
+/* Responsive styles */
+@media (max-width: 600px){
+  /* Adjust styles for smaller screens */
+  /**= For example, make cells block elements to stack them */
+
+  td, th{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    /* Add any other necessary styles for smaller screeens */
+  }
+}
+
+/* --------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------- */
+
+
 .navbar-container {
     max-width: 800px;
     margin: 0 auto;
