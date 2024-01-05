@@ -167,29 +167,25 @@ class AdminController extends ResourceController
         $image->move($uploadPath, $imageName);
         return  $imageName;
     }
-    public function updateRoom($room_id = null)
+    public function updateRoom($id = null)
     {
         $request = $this->request;
 
         $roomModel = new AnnouncementModel();
-        $existingData = $roomModel->find($room_id);
+        $existingData = $roomModel->find($id);
 
         if (empty($existingData)) {
             return $this->respond(["message" => "Record not found"], 404);
         }
 
         $data = [
-            'room_name' => $request->getVar('room_name') ?? $existingData['room_name'],
-            'price' => $request->getVar('price') ?? $existingData['price'],
-            'bed' => $request->getVar('bed') ?? $existingData['bed'],
-            'bath' => $request->getVar('bath') ?? $existingData['bath'],
-            'description' => $request->getVar('description') ?? $existingData['description'],
-            'room_status' => $request->getVar('room_status') ?? $existingData['room_status'],
+            'title' => $request->getVar('title') ?? $existingData['title'],
+            'content' => $request->getVar('content') ?? $existingData['content'],
         ];
 
         try {
             if ($data !== array_intersect_key($existingData, $data)) {
-                $roomModel->update($room_id, $data);
+                $roomModel->update($id, $data);
                 return $this->respond(["message" => "Data updated successfully"], 200);
             } else {
                 return $this->respond(["message" => "No changes detected, data not updated"], 200);
