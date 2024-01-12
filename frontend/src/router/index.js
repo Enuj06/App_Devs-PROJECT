@@ -88,7 +88,7 @@ const routes = [
     component: Counselor
   },
   {
-    path:'/cfeedback',
+    path:'/feedback',
     component: Feedback,
   },
   {

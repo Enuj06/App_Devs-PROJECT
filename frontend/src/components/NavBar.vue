@@ -15,7 +15,7 @@
     <router-link to="/appointments">
       <v-tab>Appointments</v-tab>
     </router-link>
-    <router-link to="/cfeedback">
+    <router-link to="/feedback">
       <v-tab>Feedback</v-tab>
     </router-link>
     <v-tab class="logout-tab" @click="confirmation">Log Out</v-tab>
