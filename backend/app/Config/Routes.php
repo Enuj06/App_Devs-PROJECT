@@ -32,7 +32,7 @@ $routes->post('/upload-image', 'AdminController::uploadImage');
 $routes->get('/fetch-announcements', 'AdminController::fetchAnnouncements');
 $routes->get('/edit-announcement/(:num)', 'AdminController::editAnnouncement/$1');
 $routes->post('/update-announcement/(:num)', 'AdminController::updateAnnouncement/$1');
-$routes->get('/delete-announcement/(:num)', 'AdminController::deleteAnnouncement/$1');
+$routes->delete('/delete-announcement/(:num)', 'AdminController::deleteAnnouncement/$1');
 $routes->post('/createannounce', 'AdminController::createannounce');
 $routes->put('/updateannounce/(:num)', 'AdminController::updateannounce/$1');
 $routes->get('/schedule', 'ReservationController::index'); // View all schedules
@@ -45,5 +45,10 @@ $routes->delete( '/deleteSched/(:num)', 'ReservationController::deleteSched/$1')
 $routes->post('/schedule/bookAppointment', 'ReservationController::bookAppointment');
 $routes->get('/schedule/getAvailableAppointments', 'MainController::getAvailableAppointments');
 
-$routes->post('/cfeedback', 'AdminController::cfeedback');    //create
+//******
+$routes->get('/feedback', 'AdminController::feedback'); 
+$routes->post('/cfeedback', 'AdminController::createFeedback');    //create
 $routes->get('/getfeed', 'AdminController::getfeed');    //display
+$routes->get('fetchFeed/(:num)', 'AdminController::fetchFeed/$1');     //*********** EDIT ASYNC openModal */
+$routes->delete( '/deleteFeedback/(:num)', 'AdminController::deleteFeedback/$1'); //DELETE
+$routes->put('/updateFeed/(:num)', 'AdminController::updateFeed/$1');  //UPDATE FEEDBACK

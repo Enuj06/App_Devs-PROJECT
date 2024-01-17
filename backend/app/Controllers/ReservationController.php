@@ -108,7 +108,7 @@ class ReservationController extends ResourceController
             return $this->response->setStatusCode(404)->setJSON(['msg' => 'Schedule not found']);
         }
     }
-    public function bookAppointment()
+    /*public function bookAppointment()
     {
         $scheduleModel = new ReserveModel();
 
@@ -137,5 +137,31 @@ class ReservationController extends ResourceController
         } catch (\Exception $e) {
             return $this->response->setStatusCode(500)->setJSON(['success' => false, 'error' => $e->getMessage()]);
         }
+    } */
+
+    public function bookAppointment()
+    {
+        $scheduleModel = new ReserveModel();
+        $appointmentId = $this->request->getPost('appointment');
+    
+        try {
+            $appointment = $scheduleModel->find($appointmentId);
+    
+            if ($appointment) {
+                if ($appointment['status'] === 'Available') {
+                    $appointment['status'] = 'Booked';
+                    $scheduleModel->update($appointmentId, $appointment);
+    
+                    return $this->respond(['success' => true, 'msg' => 'Appointment booked successfully']);
+                } else {
+                    return $this->fail('Invalid appointment or already booked!', 400);
+                }
+            } else {
+                return $this->fail('Appointment not found', 404);
+            }
+        } catch (\Exception $e) {
+            return $this->fail($e->getMessage(), 500);
+        }
     }
+
 }

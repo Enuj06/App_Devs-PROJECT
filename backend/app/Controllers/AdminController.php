@@ -162,7 +162,7 @@ class AdminController extends ResourceController
 
     public function handleRoomImageUpload($image, $imageName)
     {
-        $uploadPath = 'C:\laragon\www\June-main\frontend\src\assets\img';
+        $uploadPath = 'C:\laragon\www\App_Devs-PROJECT\frontend\src\assets\img';
 
         $image->move($uploadPath, $imageName);
         return  $imageName;
@@ -277,30 +277,38 @@ class AdminController extends ResourceController
     {
         $announcementModel = new AnnouncementModel();
         $deleted = $announcementModel->delete($id);
-
+    
         if ($deleted) {
-            return redirect()->to('/')->with('success', 'Announcement deleted successfully');
+            return $this->respondDeleted(['msg' => 'Announcement deleted successfully']);
         } else {
-            return redirect()->to('/')->with('error', 'Failed to delete announcement');
+            return $this->fail('Failed to delete announcement', 400);
         }
     }
 
-    public function cfeedback(){
-        $request = $this->request;
+    public function feedback()
+    {
+        return view('feedback');
+    }
+    public function createFeedback()
+    {
+        $feedModel = new FeedbackModel();
+
+        $first_name = $this->request->getJSON()->first_name;
+        $last_name = $this->request->getJSON()->last_name;
+        $feed_content = $this->request->getJSON()->feed_content;
 
         $data = [
-            'first_name' => $request->getPost('first_name'),
-            'last_name' => $request->getPost('last_name'),
-            'feed_content' => $request->getPost('feed_content'),
+            'first_name' => $first_name,
+            'last_name' => $last_name,
+            'feed_content' => $feed_content,
         ];
 
-        $feedModel = new FeedbackModel(); // Assuming you have a RoomModel
+        $inserted = $feedModel->insert($data);
 
-        try {
-            $feedModel->insert($data);
-            return $this->respond(["message" => "Room data saved successfully"], 200);
-        } catch (\Exception $e) {
-            return $this->respond(["message" => "Failed to save room data: " . $e->getMessage()], 500);
+        if ($inserted) {
+            return $this->respond(['msg' => 'okay']);
+        } else {
+            return $this->respond(['msg' => 'failed']);
         }
     }
 
@@ -308,5 +316,48 @@ class AdminController extends ResourceController
         $main = new FeedbackModel();
         $data = $main->findAll();
         return $this->response->setStatusCode(200)->setJSON($data);
+    }
+
+    public function updateFeed($id)
+    {
+        $feedModel = new FeedbackModel();
+        $faq = $feedModel->find($id);
+
+        if ($faq) {
+            $data = [
+                'first_name' => $this->request->getVar('first_name'),    //which is the variable?
+                'last_name' => $this->request->getVar('last_name'),
+                'feed_content' => $this->request->getVar('feed_content'),
+            ];
+
+            $updated = $feedModel->update($id, $data);
+
+            if ($updated) {
+                return redirect()->to('/feedback')->with('success', 'Feedback updated successfully');
+            } else {
+                return redirect()->back()->withInput()->with('error', 'Failed to update Feedback');
+            }
+        } else {
+            return redirect()->to('/feedback')->with('error', 'Feedback not found');
+        }
+    }
+
+    public function deleteFeedback($id = null)
+    {
+        $model = new FeedbackModel();
+        $findById = $model->find(['user_id' => $id]);
+        if (!$findById) return $this->fail('No Data Found', 404);
+        $product = $model->delete($id);
+        if (!$product) return $this->fail('Failed Deleted', 400);
+        return $this->respondDeleted('Deleted Successfully');
+    }
+
+    public function fetchFeed($id)
+    {
+        $model = new FeedbackModel();
+
+        $data = $model->find(['id' => $id]);
+        if (!$data) return $this->failNotFound('No Data Found');
+        return $this->respond($data[0]);
     }
 }

@@ -11,7 +11,7 @@ import './assets/css1/logo.css';
 loadFonts()
 //lumalabas dito
 //ayaw sa 
-axios.defaults.baseURL="https://minsuguidance.online/backend"
+axios.defaults.baseURL= "http://localhost:8080"          //"https://minsuguidance.online/backend" **ITO IPAPALIT
 // kaya naman ay lumabas ng data galing database
 createApp(App)
   .use(router)

@@ -6,80 +6,90 @@
     <h1>Announcements</h1>
 
     <!-- Form for creating new Announcement -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content p-4 rounded m-4">
+          <h5 class="card-title text-center mb-5 fw-light fs-5">{{ editing ? 'Edit Announcement' : 'Create Announcement' }}
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </h5>
+          <form @submit.prevent="handleSubmit">
+            <label>Title:</label>
+            <input v-model="title" required>
 
+            <label>Content:</label>
+            <textarea v-model="content" required></textarea>
 
-    <div>
-      <!-- Announcements Table -->
-      <div class="pa-4 col-12">
-        <v-row justify="space-between" align="center">
-          <v-col>
-            <h3 class="mb-2">Announcements Table</h3>
-          </v-col>
-        </v-row>
-        <div class="col-12">
-          <div class="row float-end col-2 mb-2">
-            <button @click="openDialog" class="btn btn-primary btn-small">Add Announcement</button>
-          </div>
-          <table class="table table-bordered table-hover">
-            <thead class="thead-light">
-              <tr>
-                <th class="text-center">Title</th>
-                <th class="text-center">Content</th>
-                <th class="text-center">Image</th>
-                <th class="text-center">Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="announcement in announcements" :key="announcement.id">
-                <td class="align-middle">{{ announcement.title }}</td>
-                <td class="align-middle">{{ announcement.content }}</td>
-                <td class="align-middle">
-                  <img class="img-fluid" style="max-width: 200px; max-height: 100px;"
-                  :src="require('@/assets/img/' + announcement.image_url)" alt="" />
-                </td>
-                <td class="text-center align-middle">
-                  <button @click="openRoomEditModal(announcement)"
-                    class="btn btn-outline-primary btn-sm me-2">Edit</button>
-                  <button @click="deleteAnnouncement(announcement.id)"
-                    class="btn btn-outline-danger btn-sm">Delete</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+            <label>Upload Image:</label>
+            <input type="file" ref="announcementImageInput" name="image_url" @change="handleAnnouncementImageUpload" class="form-control-file">
 
+            <button class="btn btn-success" type="submit">
+              {{ editing ? 'Update Announcement' : 'Create Announcement' }}
+            </button>
+          </form>
         </div>
-
-        <!-- Announcements Table -->
-
       </div>
     </div>
 
+    <h3>Table</h3>
+
+    <!-- Display Announcements in a wider table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Content</th>
+          <th>Image</th>
+          <th>Actions <a class="btn btn-primary me-2" @click="openDialog()" data-bs-toggle="modal"
+              data-bs-target="#editModal" data-bs-placement="top" title="Add">
+              <i class="fas fa-add"></i>
+            </a></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(announcement, index) in announcements" :key="index">
+          <td>{{ announcement.title }}</td>
+          <td>{{ announcement.content }}</td>
+          <td>
+            <img class="img-fluid" style="max-width: auto; max-height: auto;"
+              :src="require('@/assets/img/' + announcement.image_url)" alt="" />
+          </td>
+          <td>
+            <a class="btn btn-primary me-2" @click="openDialog(announcement.id)" data-bs-toggle="modal"
+              data-bs-target="#editModal" data-bs-placement="top" title="Edit">
+              <i class="fas fa-edit"></i>
+            </a>
+            <a class="btn btn-danger ms-2" @click="showConfirmationModal(announcement.id)" 
+              data-bs-toggle="modal" data-bs-target="#deleteAnnouncementModal" data-bs-placement="top" title="Delete">
+              <i class="fas fa-trash-alt"></i>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Confirmation Modal -->
+<div class="modal fade" id="deleteAnnouncementModal" tabindex="-1" aria-labelledby="deleteAnnouncementModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteAnnouncementModalLabel">Confirm Deletion</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Are you sure you want to delete this Announcement?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-danger" @click="deleteAnnouncementConfirmed">Delete</button>
+      </div>
+    </div>
   </div>
-  <v-dialog v-model="dialog" max-width="600">
-    <v-card>
-      <v-card-title>{{ editing ? 'Edit Announcement' : 'Create Announcement' }}</v-card-title>
-      <v-card-text>
-        <form @submit.prevent="handleSubmit" class="announcement-form">
-          <label>Title:</label>
-          <input v-model="title" required>
+</div>
 
-          <label>Content:</label>
-          <textarea v-model="content" required></textarea>
-
-          <label>Upload Image:</label>
-          <input type="file" ref="roomImageInput" @change="handleRoomImageUpload" class="form-control-file">
-
-          <button class="btn btn-success" type="submit">
-            {{ editing ? 'Update Announcement' : 'Create Announcement' }}
-          </button>
-          <button class="btn btn-danger" @click="closeDialog">Cancel</button>
-        </form>
-      </v-card-text>
-    </v-card>
-  </v-dialog>
+  </div>
 </template>
-  
-  
+
 <script>
 import axios from 'axios';
 import AdminLogo from '@/components/AdminLogo.vue';
@@ -96,185 +106,202 @@ export default {
       announcements: [],
       title: '',
       content: '',
-      image: null,
-      editRoomModalVisible: false,
-      editedRoom: null,
+      image_url: null,
       dialog: false,
       editing: false,
       announcementToEdit: null,
+      confirmationDialog: false,
+      announcementToDelete: null,
     };
   },
   mounted() {
     this.fetchAnnouncements();
   },
   methods: {
+    showConfirmationModal(id) {
+    this.announcementToDelete = id;
+    this.confirmationDialog = true;
+  }, //1
+  async deleteAnnouncementConfirmed() {
+    try {
+        const response = await axios.delete(`/delete-announcement/${this.announcementToDelete}`);
 
-    // onFileChange(event) {
-    //   this.image = event.target.files[0];
-    // },
-    openRoomEditModal(id=null) {
-      this.editing = true;
-      this.announcementToEdit = announcement;
+        if (response.data.msg === 'Announcement deleted successfully') {
+            console.log('Announcement deleted successfully');
+            this.fetchAnnouncements(); // Fetch the announcements again to update the list
+        } else {
+            console.error('Failed to delete announcement');
+        }
+    } catch (error) {
+        console.error('Error deleting announcement:', error);
+    } finally {
+        this.closeConfirmationModal();
+    }
+},
 
-      // Populate form fields with existing announcement data
-      this.title = announcement.title;
-      this.content = announcement.content;
+  closeConfirmationModal() {
+    this.confirmationDialog = false;
+    this.announcementToDelete = null;
 
-      // Additional fields for editing, e.g., this.editDate = announcement.editDate;
+    $('#deleteAnnouncementModal').modal('hide');
+    $('.modal-backdrop').remove();
+  }, //3
+    openDialog(id = null) {
+      if (id) {
+        console.log('Open Dialog Called');  // Add this line
+        const announcement = this.announcements.find((a) => a.id === id);
+        this.editing = true;
+        this.announcementToEdit = announcement;
 
-      this.dialog = true;
-    },
-    closeRoomEditModal() {
-      this.editedRoom = null;
-      this.editRoomModalVisible = false;
-    },
-    async saveRoomEdit() {
-      try {
-        const data = {
-          title: this.editedRoom.title,
-          content: this.editedRoom.content,
-
-        };
-
-        const apiUrl = `/updateRoom/${this.editedRoom.id}`;
-        const response = await axios.put(apiUrl, data);
-
-        console.log('Room updated successfully:', response.data);
-        this.closeRoomEditModal();
-
-      } catch (error) {
-        console.error('Error updating room:', error);
+        // Populate form fields with existing announcement data
+        this.title = announcement.title;
+        this.content = announcement.content;
+        this.dialog = true;
+      } else {
+        this.editing = false;
+        this.announcementToEdit = null;
+        this.title = '';
+        this.content = '';
+        this.dialog = true;
       }
     },
-
+    closeDialog() {
+      this.dialog = false;
+      this.editing = false;
+      this.announcementToEdit = null;
+      this.title = '';
+      this.content = '';
+      this.image_url = null;
+      this.$refs.announcementImageInput.value = null;
+    },
     async fetchAnnouncements() {
       try {
         const response = await axios.get('/fetch-announcements');
+        console.log(response.data); //
         this.announcements = response.data;
       } catch (error) {
         console.error('Error fetching announcements:', error);
       }
     },
-    // async createAnnouncement() {
-    //   try {
-    //     const formData = new FormData();
-    //     formData.append('title', this.title);
-    //     formData.append('content', this.content);
-    //     formData.append('image', this.image);
-
-    //     const response = await axios.post('/create-announcement', formData);
-
-    //     if (response.status === 200) {
-    //       this.fetchAnnouncements();
-    //       this.title = '';
-    //       this.content = '';
-    //       this.image = null;
-    //     } else {
-    //       console.error('Failed to add announcement');
-    //     }
-    //   } catch (error) {
-    //     console.error('Error creating announcement:', error);
-    //   }
-    // },
-    handleRoomImageUpload() {   ////    fdfdfdsfsfsdfr
-      const fileInput = this.$refs.roomImageInput;
-      const file = fileInput.files[0];
-
-      const formData = new FormData();
-      formData.append('image_url', file);
-
-      this.image_url = formData;
+    handleAnnouncementImageUpload() {
+      const fileInput = this.$refs.announcementImageInput;
+      this.image_url = fileInput.files[0];
     },
-    async updateAnnouncement(id) {
-  try {
-    console.log('Updating announcement with ID:', id);
-    console.log('Title:', this.title);
-    console.log('Content:', this.content);
 
-    const formData = new FormData();
-    console.log('Empty FormData:', formData);
 
-    formData.append('title', this.title);
-    formData.append('content', this.content);
-    formData.append('id', id);
-
-    if (this.$refs.roomImageInput.files.length > 0) {
-      formData.append('image', this.$refs.roomImageInput.files[0]);
-    }
-
-    console.log('Updated FormData:', formData);
-
-    const response = await axios.put(`updateannounce/${id}`, formData);
-
-    if (response.data && response.data.message) {
-      console.log(response.data.message);
-    }
-
-    this.image_url = '';
-    this.title = '';
-    this.content = '';
-    this.fetchAnnouncements();
-    this.closeDialog();
-  } catch (error) {
-    console.error(error);
-  }
-}
-,
-    handleSubmit() {
+    async handleSubmit() {
       if (this.editing) {
         this.saveRoomEdit();
       } else {
         this.createAnnouncement();
       }
       this.closeDialog();
+
+
+      const formData = new FormData();
+      formData.append('title', this.title);
+      formData.append('content', this.content);
+
+      // Check if an image is selected
+      if (this.image_url) {
+        formData.append('image_url', this.image_url);
+      }
+
+      const apiUrl = this.editing
+        ? `/updateannounce/${this.announcementToEdit.id}`
+        : '/create-announcement';
+
+      const response = await axios[this.editing ? 'put' : 'post'](apiUrl, formData);
     },
+
+
+
     async createAnnouncement() {
       try {
-        const data = this.image_url;
-        data.append('title', this.title);
-        data.append('content', this.content);
+        const formData = new FormData();
+        formData.append('title', this.title);
+        formData.append('content', this.content);
+        formData.append('image_url', this.image_url);
 
-        const ins = await axios.post('createannounce', data);
+        const response = await axios.post('/create-announcement', formData);
 
-        this.image_url = '';
-        this.title = '';
-        this.content = '';
-        this.fetchAnnouncements();
-
-
-
+        if (response.status === 200) {
+          console.log('Announcement added successfully');
+          this.fetchAnnouncements();
+          this.title = '';
+          this.content = '';
+          this.image_url = null;
+          this.closeDialog();
+          $('#editModal').modal('hide');
+          $('.modal-backdrop').remove();
+        } else {
+          console.error('Failed to add announcement');
+        }
       } catch (error) {
-        console.error(error);
+        console.error('Error creating announcement:', error);
       }
     },
-    openDialog() {
-      this.dialog = true;
-    },
-    closeDialog() {
-      this.dialog = false;
-      this.editing = false;
-      this.announcementToEdit = null;
+    async saveRoomEdit() {
+      try {
+        console.log('Saving room edit...');
+        const formData = new FormData();
+        formData.append('title', this.title);
+        formData.append('content', this.content);
 
-      this.title = '';
-      this.content = '';
-      this.image_url = '';
+        console.log("Form data Before request:", formData);
 
-      this.$refs.roomImageInput.value = null;
+        const apiUrl = `/updateannounce/${this.announcementToEdit.id}`;
+        const response = await axios.put(apiUrl, formData);
+
+        console.log('Announcement updated successfully:', response.data);
+        this.closeDialog();
+        this.fetchAnnouncements();
+
+      } catch (error) {
+        console.error('Error updating announcement:', error);
+      }
     },
+    async deleteAnnouncementConfirmed() {
+  try {
+    const response = await axios.delete(`/delete-announcement/${this.announcementToDelete}`);
+
+    if (response.data.msg === 'Announcement deleted successfully') {
+      console.log('Announcement deleted successfully');
+      this.fetchAnnouncements(); // Fetch the announcements again to update the list
+      this.closeConfirmationModal(); // Close the confirmation modal
+    } else {
+      console.error('Failed to delete announcement');
+    }
+  } catch (error) {
+    console.error('Error deleting announcement:', error);
+  }
+},
+
+
   },
 };
 </script>
+
 <style scoped>
 h1,
 h3 {
   text-align: center;
 }
 
+table,
+th,
+td {
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  width: 800px;
+  text-align: center;
+  font-size: 20px;
+}
 
-
-.announcement-form {
+form {
   max-width: 800px;
-  /* Adjust the width as needed */
   margin: 0 auto;
   padding: 20px;
   background-color: #f9f9f9;
@@ -296,23 +323,4 @@ textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
-
-
-.action-button {
-  background-color: #4caf50;
-  color: white;
-  padding: 6px 10px;
-  /* Adjust the padding as needed */
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 12px;
-  /* Adjust the font size as needed */
-  margin-right: 5px;
-  /* Add margin between buttons if necessary */
-}
-
-.action-button:hover {
-  background-color: #45a049;
-}
-</style>    
+</style>

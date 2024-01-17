@@ -1,22 +1,25 @@
 <template>
-      <div class="faq-container">
-      <Logo /><br>
-      <NavBar />
-      <div class="event-container">
-        <h1>MinSU Events</h1><br>   
-        <div v-for="(announcement, index) in announcements" :key="index" class="announcement-container">
-          <div class="announcement-details">
-            <h3>{{ announcement.title }}</h3>
-            <p>{{ announcement.content }}</p><hr>
-          </div>
-          <div class="announcement-image">
-            <img class="img-fluid menu" style="width: 100%; max-width: auto; height: 120px;"
-              :src="require('@/assets/img/' + announcement.image_url)" alt="" />
-          </div>
+  <div class="faq-container">
+    <Logo /><br>
+    <NavBar />
+    <div class="event-container">
+      <h1 style="text-align: center;"><b>MinSU Events</b></h1><br>   
+      <div v-for="(announcement, index) in announcements" :key="index" class="announcement-container">
+        <div class="announcement-details">
+          <h3>{{ announcement.title }}</h3>
+          <p>{{ announcement.content }}</p>
         </div>
-      </div>
+        <hr> <!-- Move the <hr> here -->
+        <div class="announcement-image">
+          <img class="img-fluid menu" style="max-width: 250px; height: auto; margin-top: 10px;"
+            :src="require('@/assets/img/' + announcement.image_url)" alt="" /><hr>
+        </div>
+      </div><hr>
     </div>
-  </template>
+  </div>
+</template>
+
+
   
   <script>
   import axios from 'axios';

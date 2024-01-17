@@ -90,10 +90,12 @@ const routes = [
   {
     path:'/feedback',
     component: Feedback,
+    name: 'feedback', //user
   },
   {
     path: '/adminfeedback',
     component: AdminFeedback,
+    name: 'FEED',     //admin
   },
 
 ]
