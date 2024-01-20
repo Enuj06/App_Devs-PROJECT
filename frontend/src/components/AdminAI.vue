@@ -5,7 +5,7 @@
       </header>
       <ul class="chatbox" ref="chatbox">
         <li class="chat incoming">
-          <span class="emoji-robot">🤖</span>
+          <span class="emoji-robot">👩‍🦰</span>
           <p>Hi there 👋<br>How are you?</p>
         </li>
         <!-- <li class="chat outgoing">

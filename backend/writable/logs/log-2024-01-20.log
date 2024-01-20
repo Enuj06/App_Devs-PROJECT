@@ -438,3 +438,235 @@ Stack trace:
 #10 C:\laragon\www\App_Devs-PROJECT\backend\public\index.php(89): CodeIgniter\CodeIgniter->run()
 #11 C:\laragon\www\App_Devs-PROJECT\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
 #12 {main}
+ERROR - 2024-01-20 20:48:18 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`guidance`.`appointments`, CONSTRAINT `appointments_ibfk_2` FOREIGN KEY (`appointmentid`) REFERENCES `schedules` (`id`)) in C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `sc...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `sc...')
+#2 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `sc...')
+#3 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `sc...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\App_Devs-PROJECT\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\App_Devs-PROJECT\backend\app\Controllers\ReservationController.php(87): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(942): App\Controllers\ReservationController->deleteSched('18')
+#8 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#9 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\App_Devs-PROJECT\backend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\App_Devs-PROJECT\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+ERROR - 2024-01-20 20:51:50 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`guidance`.`appointments`, CONSTRAINT `appointments_ibfk_2` FOREIGN KEY (`appointmentid`) REFERENCES `schedules` (`id`)) in C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `sc...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `sc...')
+#2 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `sc...')
+#3 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `sc...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\App_Devs-PROJECT\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\App_Devs-PROJECT\backend\app\Controllers\ReservationController.php(87): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(942): App\Controllers\ReservationController->deleteSched('18')
+#8 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#9 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\App_Devs-PROJECT\backend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\App_Devs-PROJECT\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+ERROR - 2024-01-20 21:06:15 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`guidance`.`appointments`, CONSTRAINT `appointments_ibfk_2` FOREIGN KEY (`appointmentid`) REFERENCES `schedules` (`id`)) in C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `sc...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `sc...')
+#2 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `sc...')
+#3 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `sc...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\App_Devs-PROJECT\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\App_Devs-PROJECT\backend\app\Controllers\ReservationController.php(87): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(942): App\Controllers\ReservationController->deleteSched('18')
+#8 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#9 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\App_Devs-PROJECT\backend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\App_Devs-PROJECT\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+ERROR - 2024-01-20 21:11:14 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`guidance`.`appointments`, CONSTRAINT `appointments_ibfk_2` FOREIGN KEY (`appointmentid`) REFERENCES `schedules` (`id`)) in C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `sc...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `sc...')
+#2 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `sc...')
+#3 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `sc...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\App_Devs-PROJECT\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\App_Devs-PROJECT\backend\app\Controllers\ReservationController.php(87): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(942): App\Controllers\ReservationController->deleteSched('20')
+#8 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#9 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\App_Devs-PROJECT\backend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\App_Devs-PROJECT\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+ERROR - 2024-01-20 21:31:25 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`guidance`.`appointments`, CONSTRAINT `appointments_ibfk_2` FOREIGN KEY (`appointmentid`) REFERENCES `schedules` (`id`)) in C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `sc...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `sc...')
+#2 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `sc...')
+#3 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `sc...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\App_Devs-PROJECT\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\App_Devs-PROJECT\backend\app\Controllers\ReservationController.php(87): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(942): App\Controllers\ReservationController->deleteSched('20')
+#8 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#9 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\App_Devs-PROJECT\backend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\App_Devs-PROJECT\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+ERROR - 2024-01-20 21:33:41 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`guidance`.`appointments`, CONSTRAINT `appointments_ibfk_2` FOREIGN KEY (`appointmentid`) REFERENCES `schedules` (`id`)) in C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `sc...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `sc...')
+#2 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `sc...')
+#3 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `sc...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\App_Devs-PROJECT\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\App_Devs-PROJECT\backend\app\Controllers\ReservationController.php(87): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(942): App\Controllers\ReservationController->deleteSched('20')
+#8 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#9 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\App_Devs-PROJECT\backend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\App_Devs-PROJECT\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+ERROR - 2024-01-20 22:42:29 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`guidance`.`appointments`, CONSTRAINT `appointments_ibfk_2` FOREIGN KEY (`appointmentid`) REFERENCES `schedules` (`id`)) in C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `sc...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `sc...')
+#2 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `sc...')
+#3 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `sc...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\App_Devs-PROJECT\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\App_Devs-PROJECT\backend\app\Controllers\ReservationController.php(87): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(942): App\Controllers\ReservationController->deleteSched('20')
+#8 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#9 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\App_Devs-PROJECT\backend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\App_Devs-PROJECT\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+ERROR - 2024-01-20 22:50:02 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`guidance`.`appointments`, CONSTRAINT `appointments_ibfk_2` FOREIGN KEY (`appointmentid`) REFERENCES `schedules` (`id`)) in C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `sc...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `sc...')
+#2 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `sc...')
+#3 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `sc...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\App_Devs-PROJECT\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\App_Devs-PROJECT\backend\app\Controllers\ReservationController.php(87): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(942): App\Controllers\ReservationController->deleteSched('22')
+#8 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#9 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\App_Devs-PROJECT\backend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\App_Devs-PROJECT\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+ERROR - 2024-01-20 22:50:08 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`guidance`.`appointments`, CONSTRAINT `appointments_ibfk_2` FOREIGN KEY (`appointmentid`) REFERENCES `schedules` (`id`)) in C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `sc...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `sc...')
+#2 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `sc...')
+#3 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `sc...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\App_Devs-PROJECT\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\App_Devs-PROJECT\backend\app\Controllers\ReservationController.php(87): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(942): App\Controllers\ReservationController->deleteSched('22')
+#8 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#9 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\App_Devs-PROJECT\backend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\App_Devs-PROJECT\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+ERROR - 2024-01-20 22:53:44 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`guidance`.`appointments`, CONSTRAINT `appointments_ibfk_2` FOREIGN KEY (`appointmentid`) REFERENCES `schedules` (`id`)) in C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `sc...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `sc...')
+#2 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `sc...')
+#3 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `sc...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\App_Devs-PROJECT\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\App_Devs-PROJECT\backend\app\Controllers\ReservationController.php(87): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(942): App\Controllers\ReservationController->deleteSched('22')
+#8 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#9 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\App_Devs-PROJECT\backend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\App_Devs-PROJECT\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+ERROR - 2024-01-20 22:54:27 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`guidance`.`appointments`, CONSTRAINT `appointments_ibfk_2` FOREIGN KEY (`appointmentid`) REFERENCES `schedules` (`id`)) in C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `sc...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `sc...')
+#2 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `sc...')
+#3 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `sc...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\App_Devs-PROJECT\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\App_Devs-PROJECT\backend\app\Controllers\ReservationController.php(87): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(942): App\Controllers\ReservationController->deleteSched('22')
+#8 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#9 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\App_Devs-PROJECT\backend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\App_Devs-PROJECT\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+ERROR - 2024-01-20 23:15:17 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`guidance`.`appointments`, CONSTRAINT `appointments_ibfk_2` FOREIGN KEY (`appointmentid`) REFERENCES `schedules` (`id`)) in C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `sc...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `sc...')
+#2 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `sc...')
+#3 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `sc...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\App_Devs-PROJECT\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\App_Devs-PROJECT\backend\app\Controllers\ReservationController.php(87): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(942): App\Controllers\ReservationController->deleteSched('22')
+#8 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#9 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\App_Devs-PROJECT\backend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\App_Devs-PROJECT\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+ERROR - 2024-01-20 23:18:28 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`guidance`.`appointments`, CONSTRAINT `appointments_ibfk_2` FOREIGN KEY (`appointmentid`) REFERENCES `schedules` (`id`)) in C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `sc...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `sc...')
+#2 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `sc...')
+#3 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `sc...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\App_Devs-PROJECT\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\App_Devs-PROJECT\backend\app\Controllers\ReservationController.php(87): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(942): App\Controllers\ReservationController->deleteSched('22')
+#8 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#9 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\App_Devs-PROJECT\backend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\App_Devs-PROJECT\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-01-20 23:41:29 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 119.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->createannounce()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\App_Devs-PROJECT\\backend\\public\\index.php')
+ERROR - 2024-01-20 23:41:58 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`guidance`.`appointments`, CONSTRAINT `appointments_ibfk_2` FOREIGN KEY (`appointmentid`) REFERENCES `schedules` (`id`)) in C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `sc...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `sc...')
+#2 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `sc...')
+#3 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `sc...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\App_Devs-PROJECT\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\App_Devs-PROJECT\backend\app\Controllers\ReservationController.php(87): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(942): App\Controllers\ReservationController->deleteSched('22')
+#8 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#9 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\App_Devs-PROJECT\backend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\App_Devs-PROJECT\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+ERROR - 2024-01-20 23:42:11 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`guidance`.`appointments`, CONSTRAINT `appointments_ibfk_2` FOREIGN KEY (`appointmentid`) REFERENCES `schedules` (`id`)) in C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `sc...', 0)
+#1 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `sc...')
+#2 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `sc...')
+#3 C:\laragon\www\App_Devs-PROJECT\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `sc...', Array, false)
+#4 C:\laragon\www\App_Devs-PROJECT\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\App_Devs-PROJECT\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\App_Devs-PROJECT\backend\app\Controllers\ReservationController.php(87): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(942): App\Controllers\ReservationController->deleteSched('22')
+#8 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#9 C:\laragon\www\App_Devs-PROJECT\backend\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\App_Devs-PROJECT\backend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\App_Devs-PROJECT\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}

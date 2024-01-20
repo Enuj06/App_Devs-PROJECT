@@ -45,7 +45,7 @@ export default{
       // Auto-hide the text after 10 seconds
       setTimeout(() => {
         this.hideText();
-      }, 10000);
+      }, 20000);
     },
     methods: {
       hideText() {

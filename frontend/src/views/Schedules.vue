@@ -55,11 +55,11 @@
             <td>{{ schedule.start_time }}</td>
             <td>{{ schedule.end_time }}</td>
             <td>{{ schedule.status }}</td>
-            <td><a class="btn btn-primary me-2" @click="openModal(schedule.id)" data-bs-toggle="modal"
-                data-bs-target="#editModal" data-bs-placement="top" title="Edit">
+            <td><a class="btn btn-primary me-2" @click="openModal(schedule.id)" data-bs-toggle="modal" data-bs-target="#editModal" 
+              data-bs-placement="top" title="Edit">
                 <i class="fas fa-edit"></i></a>
-              <a class="btn btn-danger ms-2" @click="staffDelete(schedule.id)" data-bs-toggle="tooltip"
-                data-bs-placement="top" title="Delete">
+              <a class="btn btn-danger ms-2" @click="staffDelete(schedule.id)" data-bs-toggle="tooltip" data-bs-placement="top" 
+              title="Delete">
                 <i class="fas fa-trash-alt"></i>
               </a>
             </td>
@@ -207,6 +207,20 @@ export default {
       this.deleteStaff(this.DeleteId);
 
       $('#deleteModal').modal('hide');
+    },
+
+    async deleteFAQ(id) {
+      try {
+        const response = await axios.get('/deleteSched/' + id);
+
+        if (response.data.msg === 'okay') {
+          this.getSched();
+        } else {
+          console.error('Failed to delete FEEDBACK');
+        }
+      } catch (error) {
+        console.error('Error deleting FEEDBACK:', error);
+      }
     },
     async deleteStaff(userId) {
       try {
