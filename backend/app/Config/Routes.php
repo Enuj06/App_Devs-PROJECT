@@ -12,6 +12,7 @@ $routes->match(['post', 'get'], '/login', 'MainController::login');
 $routes->post('/register', 'MainController::register');
 $routes->get('/fetchUserDetails', 'MainController::fetchUserDetails');
 $routes->get('/getannounce', 'AdminController::getannounce');
+$routes->get('/fetchUser/(:num)','MainController::fetchUser/$1');
 
 $routes->get('/chatbot', 'MainController::index');
 $routes->get('/getUser', 'MainController::getUser');

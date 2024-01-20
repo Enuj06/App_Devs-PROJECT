@@ -51,6 +51,18 @@ class MainController extends ResourceController
         return $this->respond($data, 200);
     }
 
+    public function fetchUser($userid) {
+        $main = new MainModel();
+
+        $userData = $main->find($userid);
+
+        if ($userData) {
+            return $this->respond($userData, 200);
+        } else {
+            return $this->respond(['message' => 'User not found'], 404);
+        }
+    }
+
     public function getSchedule(){
         $main = new ReserveModel();
         $data = $main->findAll();
@@ -114,6 +126,7 @@ class MainController extends ResourceController
                     'msg'   => 'okay',
                     'token' => $data['token'],
                     'role'  => $data['role'], //include the user's role
+                    'user_id' => $data['id']
                 ], 200);
             } else {
                 return $this->respond(['msg' => 'invalid'], 200);

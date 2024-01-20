@@ -12,7 +12,7 @@
         Please select an appointment before booking.
       </div>
 
-      <form @submit.prevent="submitForm" class="appointment-form">
+      <form class="appointment-form">
         <table>
           <thead>
             <tr>
@@ -39,11 +39,37 @@
           </tbody>
         </table>
         
-        <v-btn type="submit" block class="mt-2">Book Appointment</v-btn>
+        <v-btn @click="openModal" block class="mt-2">Book Appointment</v-btn>
+
+        <!-- <v-btn type="submit" block class="mt-2">Book Appointment</v-btn> -->
+        <!-- Modal component -->
+        <v-dialog v-model="modalOpen" max-width="500">
+          <form @submit.prevent="submitForm">
+            <v-card>
+              <v-card-title>Book Appointment</v-card-title>
+              <v-card-text>
+                <div v-if="selectedAppointment !== null">
+                  <strong>Appointment:</strong> {{ AppointmentDetails.appointment_date }} at {{
+                    AppointmentDetails.start_time }} - {{ AppointmentDetails.end_time }}
+                </div>
+                <div>
+                  <strong>User Name:</strong> {{ user.username }}
+                </div>
+
+                <v-text-field v-model="reason" label="Reason for Appointment"></v-text-field>
+              </v-card-text>
+              <v-card-actions>
+                <!-- Submit button is now inside the modal -->
+                <v-btn type="submit" color="primary">Submit</v-btn>
+                <v-btn @click="closeModal">Close</v-btn>
+              </v-card-actions>
+            </v-card>
+          </form>
+        </v-dialog>
       </form>
 
       <!-- Bootstrap Alert for Successful Booking -->
-      <div v-if="bookingSuccess" class="alert alert-success mt-3" role="alert">
+      <!-- <div v-if="bookingSuccess" class="alert alert-success mt-3" role="alert">
         Appointment booked successfully!<br>
         <strong>Selected Appointment ID:</strong> {{ selectedAppointment }}<br>
         <strong>Selected Appointment Details:</strong><br>
@@ -52,7 +78,7 @@
           Start Time: {{ selectedAppointmentDetails.start_time }}<br>
           End Time: {{ selectedAppointmentDetails.end_time }}
         </span>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -70,15 +96,26 @@ export default {
   },
   data() {
     return {
+      modalOpen: false,
       selectedAppointment: null,
       availableAppointments: [],
       bookingSuccess: false,
       selectedAppointmentDetails: null,
       showNoAppointmentAlert: false,
+      reason: "",
+      user: "",
+      AppointmentDetails: null,
     };
   },
   mounted() {
     this.fetchAvailableAppointments();
+    this.fetchUser();
+  },
+  watch: {
+    selectedAppointment(newVal) {
+      const foundAppointment = this.availableAppointments.find(appointment => appointment.id === newVal);
+      this.AppointmentDetails = foundAppointment || {};
+    },
   },
   methods: {
     async fetchAvailableAppointments() {
@@ -90,46 +127,44 @@ export default {
         console.error('Error fetching available appointments:', error);
       }
     },
-    async submitForm() {
-  if (this.selectedAppointment) {
-    try {
-      const response = await axios.post('/schedule/bookAppointment', {
-        appointment: this.selectedAppointment,
-    }, { withCredentials: true });
 
-      if (response.data && response.data.success) {
-        console.log('Appointment booked successfully!');
-        this.bookingSuccess = true;
-        this.selectedAppointmentDetails = this.availableAppointments.find(appointment => appointment.id === this.selectedAppointment);
-
-        // Log selected appointment details to console
-        console.log('Selected Appointment Details:', this.selectedAppointmentDetails);
-
-        this.showNoAppointmentAlert = false; // Reset the alert state
-      } else {
-        console.error('Error booking appointment:', response.data.error);
+    async fetchUser() {
+      try {
+        const user_id = sessionStorage.getItem("user_id");
+        const response = await axios.get(`/fetchUser/${user_id}`);
+        this.user = response.data;
+      } catch (error) {
+        console.error('Error fetching user:', error);
       }
-    } catch (error) {
-      console.error('Error submitting form:', error);
+    },
 
-      console.log('Full error response:', error.response);
-      // Display a user-friendly error message to the user
-  if (error.response && error.response.data && error.response.data.messages) {
-    alert(error.response.data.messages.error);
-  } else {
-    alert('Failed to book appointment. Please try again or contact support.');
-  }
-    }
-  } else {
-    // Display the alert for no appointment selected
-    this.showNoAppointmentAlert = true;
-    // Optionally, you can also use a timeout to hide the alert after a few seconds
-    setTimeout(() => {
-      this.showNoAppointmentAlert = false;
-    }, 5000); // Hide the alert after 5 seconds
-  }
-},
+    async submitForm() {
+      try {
+        const user_id = sessionStorage.getItem("user_id");
+        if (this.selectedAppointment) {
+          const response = await axios.post('/schedule/bookAppointment', {
+            appointment: this.selectedAppointment,
+            reason: this.reason,
+            user_id: user_id,
+          });
+          console.log('Appointment booked successfully:', response.data);
+        }
+        this.fetchAvailableAppointments();
+        this.closeModal();
+      } catch (error) {
+        console.error('Error submitting the form:', error);
+      } 
+  },
 
+  openModal() {
+      this.modalOpen = true;
+    },
+    closeModal() {
+      this.modalOpen = false;
+      this.selectedAppointment = "";
+      this.userName = "";
+      this.reason = "";
+    },
   },
 };
 </script>

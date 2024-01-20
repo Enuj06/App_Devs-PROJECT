@@ -61,6 +61,7 @@ export default {
             console.log('Login successful. Token:', response.data.token);
             // Set authentication token in local storage
             localStorage.setItem('authenticated', 'true');
+            sessionStorage.setItem("user_id", response.data.user_id);
 
             // Checking of role and redirect
             if (response.data.role === 'admin') {
