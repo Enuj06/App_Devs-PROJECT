@@ -6,13 +6,10 @@
             <b><router-link to="/communicate">AI-Generated</router-link> |
             <router-link to="/counselor">Counselor</router-link></b>
           </div>
-          <div class="openai">
+          <div class="openai" style="text-align: center;">
             <br><p>You can try this chatbot to costumize your chatbot experience.</p>
-            <button><a href="https://platform.openai.com/playground?mode=chat" target="blank">CHATBOT</a></button><br><br>
-            <button @click="handleInstructionsClick">INSTRUCTIONS</button><br><br>
-
+            <button><a href="https://platform.openai.com/playground?mode=chat" target="blank">CHATBOT</a></button>
             <InstructionsModal :showModal="showInstructionsModal" @close="showInstructionsModal = false" />
-
           </div>
       
   </div>

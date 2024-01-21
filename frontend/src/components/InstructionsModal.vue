@@ -1,7 +1,5 @@
 <template>
-    <div class="modal" v-if="showModal">
       <div class="modal-content">
-        <span class="close" @click="closeModal">&times;</span>
         <h2>Instructions</h2>
         <ol>
           <li>Click the button(CHATBOT).</li>
@@ -13,7 +11,7 @@
           <li>Enjoy!</li>
         </ol>
       </div>
-    </div>
+
   </template>
   
   <script>
