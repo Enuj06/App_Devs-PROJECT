@@ -6,36 +6,15 @@
             <b><router-link to="/communicate">AI-Generated</router-link> |
             <router-link to="/counselor">Counselor</router-link></b>
           </div>
-          <AI />
-   <!--  <v-container class="communicate-container" fluid>
-      <v-row justify="center" align="center">
-        <v-col xs="12" sm="10" md="8" lg="6">
-          <v-card-text>
-            <v-container class="faq-content">
-   -->           <!-- Chatbot response textarea -->
-        <!--     <textarea
-                v-model="chatbotResponse"
-                cols="30"
-                rows="10"
-                placeholder="Chatbot response..."
-                readonly
-              ></textarea>
+          <div class="openai">
+            <br><p>You can try this chatbot to costumize your chatbot experience.</p>
+            <button><a href="https://platform.openai.com/playground?mode=chat" target="blank">CHATBOT</a></button><br><br>
+            <button @click="handleInstructionsClick">INSTRUCTIONS</button><br><br>
 
-        -->       <!-- User input textarea -->
-        <!--      <textarea
-                v-model="userMessage"
-                cols="30"
-                rows="5"
-                placeholder="Input your thoughts here..."
-              ></textarea>
+            <InstructionsModal :showModal="showInstructionsModal" @close="showInstructionsModal = false" />
 
-         -->     <!-- Submit button -->
-        <!--      <v-btn type="submit" block class="mt-2">Submit</v-btn>
-            </v-container>  
-          </v-card-text>
-        </v-col>
-      </v-row>
-    </v-container> -->
+          </div>
+      
   </div>
 </template>
 
@@ -44,41 +23,30 @@ import axios from 'axios';
 import NavBar from '@/components/NavBar.vue';
 import Logo from '@/components/Logo.vue';
 import AI from '@/components/AI.vue';
+import InstructionsModal from '@/components/InstructionsModal.vue';
 
  export default {
    name: 'Communicate',
+   data(){
+    return{
+      showInstructionsModal: false,
+    };
+   },
    components: {
      NavBar,
      Logo,
      AI,
+     InstructionsModal,
    },
-  //  data() {
-  //    return {
-  //      tab: null,
-  //      userMessage: '',
-  //      chatbotResponse: '',
-  //    };
-  //  },
-  //  methods: {
-  //    async submitForm() {
-  //      try {
-  //        const response = await axios.post('/chatbotinteraction', {
-  //          message: this.userMessage,
-  //        });
 
-  //        if (response.data && response.data.response) {
-  //          this.chatbotResponse = response.data.response;
-  //        } else {
-  //          console.error('Invalid response format from server');
-  //        }
+   methods:{
+      handleInstructionsClick(){
+        console.log("Button clicked");
+        this.showInstructionsModal = true;
+      }
+   }
+  };
 
-  //        this.userMessage = '';
-  //      } catch (error) {
-  //        console.error('Error submitting form:', error);
-  //      }
-  //    },
-  //  },
- };
 </script>
 
 <style scoped>
@@ -109,8 +77,53 @@ textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
-
 .optional{
   text-align: center;
 }
+
+@keyframes shine {
+      0% {
+        background-position: -100% 0;
+      }
+      100% {
+        background-position: 200% 0;
+      }
+    }
+
+
+
+    .openai {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(90deg, #fff, #eee, #fff); /* Adjust colors as needed */
+      background-size: 200% 100%;
+      animation: shine 3s linear infinite, subtlePulse 5s ease-in-out infinite;
+      padding: 20px;
+      
+      border-radius: 10px;
+    }
+
+    .openai p {
+      margin: 0;
+    }
+
+    .openai button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #3498db; /* Adjust button color as needed */
+      color: #fff; /* Adjust text color as needed */
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .openai button:hover {
+      background-color: #2980b9; /* Adjust button hover color as needed */
+    }
+    a{
+      color: white;
+    }
 </style>
