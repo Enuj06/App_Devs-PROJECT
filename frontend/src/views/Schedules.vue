@@ -68,7 +68,8 @@
         </tbody>
       </table>
     </div>
-  </div>
+  </div><br>
+  <Appoint />
   <!-- Modal for Confirmation -->
   <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -92,6 +93,7 @@
 <script>
 import AdminNav from '@/components/AdminNav.vue';
 import AdminLogo from '@/components/AdminLogo.vue';
+import Appoint from '@/components/Appoint.vue';
 import axios from 'axios';
 
 export default {
@@ -99,6 +101,7 @@ export default {
   components: {
     AdminLogo,
     AdminNav,
+    Appoint,
   },
   data() {
     return {

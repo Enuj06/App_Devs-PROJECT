@@ -12,7 +12,7 @@ class AppointmentModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['userid',	'appointmentid',	'status',	'reason'	];
+    protected $allowedFields    = ['userid',	'appointmentid',	'status',	'reason', 'created_at'	];
 
     // Dates
     protected $useTimestamps = false;

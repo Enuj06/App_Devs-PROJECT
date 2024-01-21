@@ -13,6 +13,7 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use Orhanerday\OpenAi\OpenAi;
 use App\Models\FaqModel;
+use App\Models\AppointmentModel;
 
 class MainController extends ResourceController
 {
@@ -80,6 +81,12 @@ class MainController extends ResourceController
         return $this->response->setStatusCode(200)->setJSON($data);
     }
     
+    public function getAppoint(){
+        $main = new AppointmentModel();
+        $data = $main->findAll();
+        return $this->respond($data, 200);
+    }
+
     public function register() 
     { 
 

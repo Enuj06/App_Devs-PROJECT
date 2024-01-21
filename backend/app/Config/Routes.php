@@ -53,3 +53,6 @@ $routes->get('/getfeed', 'AdminController::getfeed');    //display
 $routes->get('fetchFeed/(:num)', 'AdminController::fetchFeed/$1');     //*********** EDIT ASYNC openModal */
 $routes->delete( '/deleteFeedback/(:num)', 'AdminController::deleteFeedback/$1'); //DELETE
 $routes->put('/updateFeed/(:num)', 'AdminController::updateFeed/$1');  //UPDATE FEEDBACK
+
+
+$routes->get('/getAppoint', 'MainController::getAppoint');
